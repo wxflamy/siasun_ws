@@ -1,0 +1,357 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ALARM	include/siasun_driver/simple_message/siasun_motion_reply.h	/^  ALARM      = 4,$/;"	e	enum:siasun::simple_message::motion_reply::MotionReplyResults::MotionReplyResult
+ALARM	include/siasun_driver/simple_message/siasun_motion_reply.h	/^  ALARM,$/;"	e	enum:siasun::simple_message::motion_reply::MotionReplySubcodes::NotReady::NotReadyCode
+BUSY	include/siasun_driver/simple_message/siasun_motion_reply.h	/^  BUSY       = 1,$/;"	e	enum:siasun::simple_message::motion_reply::MotionReplyResults::MotionReplyResult
+CHECK_MOTION_READY	include/siasun_driver/simple_message/siasun_motion_ctrl.h	/^  CHECK_MOTION_READY = 200101,  \/\/ check if controller is ready to receive ROS motion cmds$/;"	e	enum:siasun::simple_message::motion_ctrl::MotionControlCmds::MotionControlCmd
+CHECK_QUEUE_CNT	include/siasun_driver/simple_message/siasun_motion_ctrl.h	/^  CHECK_QUEUE_CNT    = 200102,  \/\/ get number of motion increments in queue$/;"	e	enum:siasun::simple_message::motion_ctrl::MotionControlCmds::MotionControlCmd
+COMMAND	include/siasun_driver/simple_message/siasun_motion_reply.h	/^  COMMAND,$/;"	e	enum:siasun::simple_message::motion_reply::MotionReplySubcodes::Invalid::InvalidCode
+CTRL_GRIPPER	include/siasun_driver/simple_message/siasun_motion_ctrl.h	/^  CTRL_GRIPPER       = 200131,  \/\/ control grippper$/;"	e	enum:siasun::simple_message::motion_ctrl::MotionControlCmds::MotionControlCmd
+DATA	include/siasun_driver/simple_message/siasun_motion_reply.h	/^  DATA = 3010,$/;"	e	enum:siasun::simple_message::motion_reply::MotionReplySubcodes::Invalid::InvalidCode
+DATA_ACCEL	include/siasun_driver/simple_message/siasun_motion_reply.h	/^  DATA_ACCEL,$/;"	e	enum:siasun::simple_message::motion_reply::MotionReplySubcodes::Invalid::InvalidCode
+DATA_INSUFFICIENT	include/siasun_driver/simple_message/siasun_motion_reply.h	/^  DATA_INSUFFICIENT$/;"	e	enum:siasun::simple_message::motion_reply::MotionReplySubcodes::Invalid::InvalidCode
+DATA_POSITION	include/siasun_driver/simple_message/siasun_motion_reply.h	/^  DATA_POSITION,$/;"	e	enum:siasun::simple_message::motion_reply::MotionReplySubcodes::Invalid::InvalidCode
+DATA_SPEED	include/siasun_driver/simple_message/siasun_motion_reply.h	/^  DATA_SPEED,$/;"	e	enum:siasun::simple_message::motion_reply::MotionReplySubcodes::Invalid::InvalidCode
+DATA_START_POS	include/siasun_driver/simple_message/siasun_motion_reply.h	/^  DATA_START_POS,$/;"	e	enum:siasun::simple_message::motion_reply::MotionReplySubcodes::Invalid::InvalidCode
+ERROR	include/siasun_driver/simple_message/siasun_motion_reply.h	/^  ERROR,$/;"	e	enum:siasun::simple_message::motion_reply::MotionReplySubcodes::NotReady::NotReadyCode
+ESTOP	include/siasun_driver/simple_message/siasun_motion_reply.h	/^  ESTOP,$/;"	e	enum:siasun::simple_message::motion_reply::MotionReplySubcodes::NotReady::NotReadyCode
+FAILURE	include/siasun_driver/simple_message/siasun_motion_reply.h	/^  FAILURE    = 2,$/;"	e	enum:siasun::simple_message::motion_reply::MotionReplyResults::MotionReplyResult
+FALSE	include/siasun_driver/simple_message/siasun_motion_reply.h	/^  FALSE      = 2,$/;"	e	enum:siasun::simple_message::motion_reply::MotionReplyResults::MotionReplyResult
+GROUPNO	include/siasun_driver/simple_message/siasun_motion_reply.h	/^  GROUPNO,$/;"	e	enum:siasun::simple_message::motion_reply::MotionReplySubcodes::Invalid::InvalidCode
+HOLD	include/siasun_driver/simple_message/siasun_motion_reply.h	/^  HOLD,$/;"	e	enum:siasun::simple_message::motion_reply::MotionReplySubcodes::NotReady::NotReadyCode
+IDLE	include/siasun_driver/industrial_robot_client/joint_trajectory_streamer.h	/^  IDLE = 0, STREAMING = 1  \/\/ ,STARTING, \/\/, STOPPING$/;"	e	enum:industrial_robot_client::joint_trajectory_streamer::TransferStates::TransferState
+INVALID	include/siasun_driver/simple_message/siasun_motion_reply.h	/^  INVALID    = 3,$/;"	e	enum:siasun::simple_message::motion_reply::MotionReplyResults::MotionReplyResult
+Invalid	include/siasun_driver/simple_message/siasun_motion_reply.h	/^namespace Invalid$/;"	n	namespace:siasun::simple_message::motion_reply::MotionReplySubcodes
+InvalidCode	include/siasun_driver/simple_message/siasun_motion_reply.h	/^enum InvalidCode$/;"	g	namespace:siasun::simple_message::motion_reply::MotionReplySubcodes::Invalid
+JointDataToVector	src/industrial_robot_client/joint_feedback_relay_handler.cpp	/^bool JointFeedbackRelayHandler::JointDataToVector(const JointData &joints,$/;"	f	class:industrial_robot_client::joint_feedback_relay_handler::JointFeedbackRelayHandler
+JointFeedbackRelayHandler	include/siasun_driver/industrial_robot_client/joint_feedback_relay_handler.h	/^  JointFeedbackRelayHandler() {};$/;"	f	class:industrial_robot_client::joint_feedback_relay_handler::JointFeedbackRelayHandler
+JointFeedbackRelayHandler	include/siasun_driver/industrial_robot_client/joint_feedback_relay_handler.h	/^class JointFeedbackRelayHandler : public industrial_robot_client::joint_relay_handler::JointRelayHandler$/;"	c	namespace:industrial_robot_client::joint_feedback_relay_handler
+JointRelayHandler	include/siasun_driver/industrial_robot_client/joint_relay_handler.h	/^  JointRelayHandler() {};$/;"	f	class:industrial_robot_client::joint_relay_handler::JointRelayHandler
+JointRelayHandler	include/siasun_driver/industrial_robot_client/joint_relay_handler.h	/^class JointRelayHandler : public industrial::message_handler::MessageHandler$/;"	c	namespace:industrial_robot_client::joint_relay_handler
+JointTrajectoryInterface	include/siasun_driver/industrial_robot_client/joint_trajectory_interface.h	/^  JointTrajectoryInterface() : default_joint_pos_(0.0), default_vel_ratio_(0.1), default_duration_(10.0) {};$/;"	f	class:industrial_robot_client::joint_trajectory_interface::JointTrajectoryInterface
+JointTrajectoryInterface	include/siasun_driver/industrial_robot_client/joint_trajectory_interface.h	/^class JointTrajectoryInterface$/;"	c	namespace:industrial_robot_client::joint_trajectory_interface
+JointTrajectoryStreamer	include/siasun_driver/industrial_robot_client/joint_trajectory_streamer.h	/^  JointTrajectoryStreamer(int min_buffer_size = 1) : min_buffer_size_(min_buffer_size) {};$/;"	f	class:industrial_robot_client::joint_trajectory_streamer::JointTrajectoryStreamer
+JointTrajectoryStreamer	include/siasun_driver/industrial_robot_client/joint_trajectory_streamer.h	/^class JointTrajectoryStreamer : public JointTrajectoryInterface$/;"	c	namespace:industrial_robot_client::joint_trajectory_streamer
+MAX_DATA_CNT	include/siasun_driver/simple_message/siasun_motion_ctrl.h	/^  static const size_t MAX_DATA_CNT = 10;$/;"	m	class:siasun::simple_message::motion_ctrl::MotionCtrl
+MAX_DATA_CNT	include/siasun_driver/simple_message/siasun_motion_reply.h	/^  static const size_t MAX_DATA_CNT = 10;$/;"	m	class:siasun::simple_message::motion_reply::MotionReply
+MOTOMAN_DRIVER_INDUSTRIAL_ROBOT_CLIENT_JOINT_FEEDBACK_RELAY_HANDLER_H	include/siasun_driver/industrial_robot_client/joint_feedback_relay_handler.h	34;"	d
+MOTOMAN_DRIVER_INDUSTRIAL_ROBOT_CLIENT_JOINT_RELAY_HANDLER_H	include/siasun_driver/industrial_robot_client/joint_relay_handler.h	34;"	d
+MOTOMAN_DRIVER_INDUSTRIAL_ROBOT_CLIENT_JOINT_TRAJECTORY_INTERFACE_H	include/siasun_driver/industrial_robot_client/joint_trajectory_interface.h	33;"	d
+MOTOMAN_DRIVER_INDUSTRIAL_ROBOT_CLIENT_JOINT_TRAJECTORY_STREAMER_H	include/siasun_driver/industrial_robot_client/joint_trajectory_streamer.h	33;"	d
+MOTOMAN_DRIVER_INDUSTRIAL_ROBOT_CLIENT_MOTOMAN_UTILS_H	include/siasun_driver/industrial_robot_client/siasun_utils.h	33;"	d
+MOTOMAN_DRIVER_INDUSTRIAL_ROBOT_CLIENT_ROBOT_STATE_INTERFACE_H	include/siasun_driver/industrial_robot_client/robot_state_interface.h	34;"	d
+MOTOMAN_DRIVER_JOINT_TRAJECTORY_STREAMER_H	include/siasun_driver/joint_trajectory_streamer.h	33;"	d
+MOTOMAN_DRIVER_MOTION_CTRL_H	include/siasun_driver/motion_ctrl.h	33;"	d
+MOTOMAN_DRIVER_SIMPLE_MESSAGE_MOTOMAN_MOTION_CTRL_H	include/siasun_driver/simple_message/siasun_motion_ctrl.h	33;"	d
+MOTOMAN_DRIVER_SIMPLE_MESSAGE_MOTOMAN_MOTION_CTRL_MESSAGE_H	include/siasun_driver/simple_message/siasun_motion_ctrl_message.h	33;"	d
+MOTOMAN_DRIVER_SIMPLE_MESSAGE_MOTOMAN_MOTION_REPLY_H	include/siasun_driver/simple_message/siasun_motion_reply.h	33;"	d
+MOTOMAN_DRIVER_SIMPLE_MESSAGE_MOTOMAN_MOTION_REPLY_MESSAGE_H	include/siasun_driver/simple_message/siasun_motion_reply_message.h	33;"	d
+MOTOMAN_DRIVER_SIMPLE_MESSAGE_MOTOMAN_SIMPLE_MESSAGE_H	include/siasun_driver/simple_message/siasun_simple_message.h	33;"	d
+MOTOMAN_MOTION_CTRL	include/siasun_driver/simple_message/siasun_simple_message.h	/^  MOTOMAN_MOTION_CTRL = 2001,$/;"	e	enum:siasun::simple_message::MotomanMsgTypes::MotomanMsgType
+MOTOMAN_MOTION_REPLY	include/siasun_driver/simple_message/siasun_simple_message.h	/^  MOTOMAN_MOTION_REPLY = 2002,$/;"	e	enum:siasun::simple_message::MotomanMsgTypes::MotomanMsgType
+MOTOMAN_MSG_BEGIN	include/siasun_driver/simple_message/siasun_simple_message.h	/^  MOTOMAN_MSG_BEGIN = 2000,$/;"	e	enum:siasun::simple_message::MotomanMsgTypes::MotomanMsgType
+MP_FAILURE	include/siasun_driver/simple_message/siasun_motion_reply.h	/^  MP_FAILURE = 6$/;"	e	enum:siasun::simple_message::motion_reply::MotionReplyResults::MotionReplyResult
+MSGHEADER	include/siasun_driver/simple_message/siasun_motion_reply.h	/^  MSGHEADER,$/;"	e	enum:siasun::simple_message::motion_reply::MotionReplySubcodes::Invalid::InvalidCode
+MSGSIZE	include/siasun_driver/simple_message/siasun_motion_reply.h	/^  MSGSIZE,$/;"	e	enum:siasun::simple_message::motion_reply::MotionReplySubcodes::Invalid::InvalidCode
+MSGTYPE	include/siasun_driver/simple_message/siasun_motion_reply.h	/^  MSGTYPE,$/;"	e	enum:siasun::simple_message::motion_reply::MotionReplySubcodes::Invalid::InvalidCode
+MotionControlCmd	include/siasun_driver/motion_ctrl.h	/^typedef siasun::simple_message::motion_ctrl::MotionControlCmd MotionControlCmd;$/;"	t	namespace:siasun::motion_ctrl
+MotionControlCmd	include/siasun_driver/simple_message/siasun_motion_ctrl.h	/^enum MotionControlCmd$/;"	g	namespace:siasun::simple_message::motion_ctrl::MotionControlCmds
+MotionControlCmd	include/siasun_driver/simple_message/siasun_motion_ctrl.h	/^typedef MotionControlCmds::MotionControlCmd MotionControlCmd;$/;"	t	namespace:siasun::simple_message::motion_ctrl
+MotionControlCmds	include/siasun_driver/simple_message/siasun_motion_ctrl.h	/^namespace MotionControlCmds$/;"	n	namespace:siasun::simple_message::motion_ctrl
+MotionCtrl	include/siasun_driver/simple_message/siasun_motion_ctrl.h	/^class MotionCtrl : public industrial::simple_serialize::SimpleSerialize$/;"	c	namespace:siasun::simple_message::motion_ctrl
+MotionCtrl	src/simple_message/siasun_motion_ctrl.cpp	/^MotionCtrl::MotionCtrl(void)$/;"	f	class:siasun::simple_message::motion_ctrl::MotionCtrl
+MotionCtrlMessage	include/siasun_driver/simple_message/siasun_motion_ctrl_message.h	/^class MotionCtrlMessage : public industrial::typed_message::TypedMessage$/;"	c	namespace:siasun::simple_message::motion_ctrl_message
+MotionCtrlMessage	src/simple_message/siasun_motion_ctrl_message.cpp	/^MotionCtrlMessage::MotionCtrlMessage(void)$/;"	f	class:siasun::simple_message::motion_ctrl_message::MotionCtrlMessage
+MotionReply	include/siasun_driver/simple_message/siasun_motion_reply.h	/^class MotionReply : public industrial::simple_serialize::SimpleSerialize$/;"	c	namespace:siasun::simple_message::motion_reply
+MotionReply	src/simple_message/siasun_motion_reply.cpp	/^MotionReply::MotionReply(void)$/;"	f	class:siasun::simple_message::motion_reply::MotionReply
+MotionReplyMessage	include/siasun_driver/simple_message/siasun_motion_reply_message.h	/^class MotionReplyMessage : public industrial::typed_message::TypedMessage$/;"	c	namespace:siasun::simple_message::motion_reply_message
+MotionReplyMessage	src/simple_message/siasun_motion_reply_message.cpp	/^MotionReplyMessage::MotionReplyMessage(void)$/;"	f	class:siasun::simple_message::motion_reply_message::MotionReplyMessage
+MotionReplyResult	include/siasun_driver/simple_message/siasun_motion_reply.h	/^enum MotionReplyResult$/;"	g	namespace:siasun::simple_message::motion_reply::MotionReplyResults
+MotionReplyResult	include/siasun_driver/simple_message/siasun_motion_reply.h	/^typedef MotionReplyResults::MotionReplyResult MotionReplyResult;$/;"	t	namespace:siasun::simple_message::motion_reply
+MotionReplyResults	include/siasun_driver/simple_message/siasun_motion_reply.h	/^namespace MotionReplyResults$/;"	n	namespace:siasun::simple_message::motion_reply
+MotionReplySubcodes	include/siasun_driver/simple_message/siasun_motion_reply.h	/^namespace MotionReplySubcodes$/;"	n	namespace:siasun::simple_message::motion_reply
+MotomanMsgType	include/siasun_driver/simple_message/siasun_simple_message.h	/^enum MotomanMsgType$/;"	g	namespace:siasun::simple_message::MotomanMsgTypes
+MotomanMsgType	include/siasun_driver/simple_message/siasun_simple_message.h	/^typedef MotomanMsgTypes::MotomanMsgType MotomanMsgType;$/;"	t	namespace:siasun::simple_message
+MotomanMsgTypes	include/siasun_driver/simple_message/siasun_simple_message.h	/^namespace MotomanMsgTypes$/;"	n	namespace:siasun::simple_message
+NOT_PLAY	include/siasun_driver/simple_message/siasun_motion_reply.h	/^  NOT_PLAY,$/;"	e	enum:siasun::simple_message::motion_reply::MotionReplySubcodes::NotReady::NotReadyCode
+NOT_READY	include/siasun_driver/simple_message/siasun_motion_reply.h	/^  NOT_READY  = 5,$/;"	e	enum:siasun::simple_message::motion_reply::MotionReplyResults::MotionReplyResult
+NOT_REMOTE	include/siasun_driver/simple_message/siasun_motion_reply.h	/^  NOT_REMOTE,$/;"	e	enum:siasun::simple_message::motion_reply::MotionReplySubcodes::NotReady::NotReadyCode
+NOT_STARTED	include/siasun_driver/simple_message/siasun_motion_reply.h	/^  NOT_STARTED,$/;"	e	enum:siasun::simple_message::motion_reply::MotionReplySubcodes::NotReady::NotReadyCode
+NotReady	include/siasun_driver/simple_message/siasun_motion_reply.h	/^namespace NotReady$/;"	n	namespace:siasun::simple_message::motion_reply::MotionReplySubcodes
+NotReadyCode	include/siasun_driver/simple_message/siasun_motion_reply.h	/^enum NotReadyCode$/;"	g	namespace:siasun::simple_message::motion_reply::MotionReplySubcodes::NotReady
+ROS_ERROR_RETURN	src/industrial_robot_client/joint_trajectory_interface.cpp	53;"	d	file:
+ROS_ERROR_RETURN	src/joint_trajectory_streamer.cpp	56;"	d	file:
+ROS_MSG_MOTO_JOINT_FEEDBACK_EX	include/siasun_driver/simple_message/siasun_simple_message.h	/^  ROS_MSG_MOTO_JOINT_FEEDBACK_EX = 2017, \/\/Similar to Dynamic Joint State on the REP I0001$/;"	e	enum:siasun::simple_message::MotomanMsgTypes::MotomanMsgType
+ROS_MSG_MOTO_JOINT_TRAJ_PT_FULL_EX	include/siasun_driver/simple_message/siasun_simple_message.h	/^  ROS_MSG_MOTO_JOINT_TRAJ_PT_FULL_EX = 2016, \/\/ This is similar to the "Dynamic Joint Point" in REP I0001$/;"	e	enum:siasun::simple_message::MotomanMsgTypes::MotomanMsgType
+RobotStateInterface	include/siasun_driver/industrial_robot_client/robot_state_interface.h	/^class RobotStateInterface$/;"	c	namespace:industrial_robot_client::robot_state_interface
+RobotStateInterface	src/industrial_robot_client/robot_state_interface.cpp	/^RobotStateInterface::RobotStateInterface()$/;"	f	class:industrial_robot_client::robot_state_interface::RobotStateInterface
+SEQUENCE	include/siasun_driver/simple_message/siasun_motion_reply.h	/^  SEQUENCE,$/;"	e	enum:siasun::simple_message::motion_reply::MotionReplySubcodes::Invalid::InvalidCode
+SERVO_OFF	include/siasun_driver/simple_message/siasun_motion_reply.h	/^  SERVO_OFF,$/;"	e	enum:siasun::simple_message::motion_reply::MotionReplySubcodes::NotReady::NotReadyCode
+SKILLSEND	include/siasun_driver/simple_message/siasun_motion_reply.h	/^  SKILLSEND$/;"	e	enum:siasun::simple_message::motion_reply::MotionReplySubcodes::NotReady::NotReadyCode
+START_TRAJ_MODE	include/siasun_driver/simple_message/siasun_motion_ctrl.h	/^  START_TRAJ_MODE    = 200121,  \/\/ prepare controller to receive ROS motion cmds$/;"	e	enum:siasun::simple_message::motion_ctrl::MotionControlCmds::MotionControlCmd
+STOP_MOTION	include/siasun_driver/simple_message/siasun_motion_ctrl.h	/^  STOP_MOTION        = 200111,  \/\/ stop robot motion immediately$/;"	e	enum:siasun::simple_message::motion_ctrl::MotionControlCmds::MotionControlCmd
+STOP_TRAJ_MODE	include/siasun_driver/simple_message/siasun_motion_ctrl.h	/^  STOP_TRAJ_MODE     = 200122,  \/\/ return motion control to INFORM$/;"	e	enum:siasun::simple_message::motion_ctrl::MotionControlCmds::MotionControlCmd
+STREAMING	include/siasun_driver/industrial_robot_client/joint_trajectory_streamer.h	/^  IDLE = 0, STREAMING = 1  \/\/ ,STARTING, \/\/, STOPPING$/;"	e	enum:industrial_robot_client::joint_trajectory_streamer::TransferStates::TransferState
+SUCCESS	include/siasun_driver/simple_message/siasun_motion_reply.h	/^  SUCCESS    = 0,$/;"	e	enum:siasun::simple_message::motion_reply::MotionReplyResults::MotionReplyResult
+SiasunJointTrajectoryStreamer	include/siasun_driver/joint_trajectory_streamer.h	/^  SiasunJointTrajectoryStreamer(int robot_id = -1) : JointTrajectoryStreamer(1),$/;"	f	class:siasun::joint_trajectory_streamer::SiasunJointTrajectoryStreamer
+SiasunJointTrajectoryStreamer	include/siasun_driver/joint_trajectory_streamer.h	/^class SiasunJointTrajectoryStreamer : public JointTrajectoryStreamer$/;"	c	namespace:siasun::joint_trajectory_streamer
+SiasunMotionCtrl	include/siasun_driver/motion_ctrl.h	/^  SiasunMotionCtrl() {}$/;"	f	class:siasun::motion_ctrl::SiasunMotionCtrl
+SiasunMotionCtrl	include/siasun_driver/motion_ctrl.h	/^class SiasunMotionCtrl$/;"	c	namespace:siasun::motion_ctrl
+TRUE	include/siasun_driver/simple_message/siasun_motion_reply.h	/^  TRUE       = 0,$/;"	e	enum:siasun::simple_message::motion_reply::MotionReplyResults::MotionReplyResult
+TransferState	include/siasun_driver/industrial_robot_client/joint_trajectory_streamer.h	/^enum TransferState$/;"	g	namespace:industrial_robot_client::joint_trajectory_streamer::TransferStates
+TransferState	include/siasun_driver/industrial_robot_client/joint_trajectory_streamer.h	/^typedef TransferStates::TransferState TransferState;$/;"	t	namespace:industrial_robot_client::joint_trajectory_streamer
+TransferStates	include/siasun_driver/industrial_robot_client/joint_trajectory_streamer.h	/^namespace TransferStates$/;"	n	namespace:industrial_robot_client::joint_trajectory_streamer
+UNDEFINED	include/siasun_driver/simple_message/siasun_motion_ctrl.h	/^  UNDEFINED          = 0,$/;"	e	enum:siasun::simple_message::motion_ctrl::MotionControlCmds::MotionControlCmd
+UNSPECIFIED	include/siasun_driver/simple_message/siasun_motion_reply.h	/^  UNSPECIFIED = 3000,$/;"	e	enum:siasun::simple_message::motion_reply::MotionReplySubcodes::Invalid::InvalidCode
+UNSPECIFIED	include/siasun_driver/simple_message/siasun_motion_reply.h	/^  UNSPECIFIED = 5000,$/;"	e	enum:siasun::simple_message::motion_reply::MotionReplySubcodes::NotReady::NotReadyCode
+VectorToJointData	src/joint_trajectory_streamer.cpp	/^bool SiasunJointTrajectoryStreamer::VectorToJointData(const std::vector<double> &vec,$/;"	f	class:siasun::joint_trajectory_streamer::SiasunJointTrajectoryStreamer
+WAITING_ROS	include/siasun_driver/simple_message/siasun_motion_reply.h	/^  WAITING_ROS,$/;"	e	enum:siasun::simple_message::motion_reply::MotionReplySubcodes::NotReady::NotReadyCode
+add_handler	include/siasun_driver/industrial_robot_client/robot_state_interface.h	/^  void add_handler(MessageHandler* handler, bool allow_replace = true)$/;"	f	class:industrial_robot_client::robot_state_interface::RobotStateInterface
+all_joint_names_	include/siasun_driver/industrial_robot_client/joint_relay_handler.h	/^  std::vector<std::string> all_joint_names_;$/;"	m	class:industrial_robot_client::joint_relay_handler::JointRelayHandler
+all_joint_names_	include/siasun_driver/industrial_robot_client/joint_trajectory_interface.h	/^  std::vector<std::string> all_joint_names_;$/;"	m	class:industrial_robot_client::joint_trajectory_interface::JointTrajectoryInterface
+build_traj	src/move_to_joint.py	/^def build_traj(start, end, duration):$/;"	f
+byteLength	include/siasun_driver/simple_message/siasun_motion_ctrl.h	/^  unsigned int byteLength()$/;"	f	class:siasun::simple_message::motion_ctrl::MotionCtrl
+byteLength	include/siasun_driver/simple_message/siasun_motion_ctrl_message.h	/^  unsigned int byteLength()$/;"	f	class:siasun::simple_message::motion_ctrl_message::MotionCtrlMessage
+byteLength	include/siasun_driver/simple_message/siasun_motion_reply.h	/^  unsigned int byteLength()$/;"	f	class:siasun::simple_message::motion_reply::MotionReply
+byteLength	include/siasun_driver/simple_message/siasun_motion_reply_message.h	/^  unsigned int byteLength()$/;"	f	class:siasun::simple_message::motion_reply_message::MotionReplyMessage
+calc_duration	src/industrial_robot_client/joint_trajectory_interface.cpp	/^bool JointTrajectoryInterface::calc_duration$/;"	f	class:industrial_robot_client::joint_trajectory_interface::JointTrajectoryInterface
+calc_velocity	src/industrial_robot_client/joint_trajectory_interface.cpp	/^bool JointTrajectoryInterface::calc_velocity($/;"	f	class:industrial_robot_client::joint_trajectory_interface::JointTrajectoryInterface
+clearData	include/siasun_driver/simple_message/siasun_motion_ctrl.h	/^  void clearData()$/;"	f	class:siasun::simple_message::motion_ctrl::MotionCtrl
+clearData	include/siasun_driver/simple_message/siasun_motion_reply.h	/^  void clearData()$/;"	f	class:siasun::simple_message::motion_reply::MotionReply
+cmd_	include/siasun_driver/simple_message/siasun_motion_ctrl_message.h	/^  siasun::simple_message::motion_ctrl::MotionCtrl cmd_;$/;"	m	class:siasun::simple_message::motion_ctrl_message::MotionCtrlMessage
+command_	include/siasun_driver/simple_message/siasun_motion_ctrl.h	/^  industrial::shared_types::shared_int command_;$/;"	m	class:siasun::simple_message::motion_ctrl::MotionCtrl
+command_	include/siasun_driver/simple_message/siasun_motion_reply.h	/^  industrial::shared_types::shared_int command_;$/;"	m	class:siasun::simple_message::motion_reply::MotionReply
+connection_	include/siasun_driver/industrial_robot_client/joint_trajectory_interface.h	/^  SmplMsgConnection* connection_;$/;"	m	class:industrial_robot_client::joint_trajectory_interface::JointTrajectoryInterface
+connection_	include/siasun_driver/industrial_robot_client/robot_state_interface.h	/^  SmplMsgConnection* connection_;$/;"	m	class:industrial_robot_client::robot_state_interface::RobotStateInterface
+connection_	include/siasun_driver/motion_ctrl.h	/^  SmplMsgConnection* connection_;$/;"	m	class:siasun::motion_ctrl::SiasunMotionCtrl
+controllerReady	src/motion_ctrl.cpp	/^bool SiasunMotionCtrl::controllerReady()$/;"	f	class:siasun::motion_ctrl::SiasunMotionCtrl
+convert_message	src/industrial_robot_client/joint_feedback_relay_handler.cpp	/^bool JointFeedbackRelayHandler::convert_message(JointFeedbackMessage& msg_in, JointTrajectoryPoint* joint_state)$/;"	f	class:industrial_robot_client::joint_feedback_relay_handler::JointFeedbackRelayHandler
+convert_message	src/industrial_robot_client/joint_feedback_relay_handler.cpp	/^bool JointFeedbackRelayHandler::convert_message(SimpleMessage& msg_in, JointTrajectoryPoint* joint_state)$/;"	f	class:industrial_robot_client::joint_feedback_relay_handler::JointFeedbackRelayHandler
+convert_message	src/industrial_robot_client/joint_relay_handler.cpp	/^bool JointRelayHandler::convert_message(JointMessage& msg_in, JointTrajectoryPoint* joint_state)$/;"	f	class:industrial_robot_client::joint_relay_handler::JointRelayHandler
+convert_message	src/industrial_robot_client/joint_relay_handler.cpp	/^bool JointRelayHandler::convert_message(SimpleMessage& msg_in, JointTrajectoryPoint* joint_state)$/;"	f	class:industrial_robot_client::joint_relay_handler::JointRelayHandler
+copyFrom	src/simple_message/siasun_motion_ctrl.cpp	/^void MotionCtrl::copyFrom(MotionCtrl &src)$/;"	f	class:siasun::simple_message::motion_ctrl::MotionCtrl
+copyFrom	src/simple_message/siasun_motion_reply.cpp	/^void MotionReply::copyFrom(MotionReply &src)$/;"	f	class:siasun::simple_message::motion_reply::MotionReply
+create_message	src/industrial_robot_client/joint_trajectory_interface.cpp	/^bool JointTrajectoryInterface::create_message($/;"	f	class:industrial_robot_client::joint_trajectory_interface::JointTrajectoryInterface
+create_message	src/joint_trajectory_streamer.cpp	/^bool SiasunJointTrajectoryStreamer::create_message(int seq, const trajectory_msgs::JointTrajectoryPoint &pt, SimpleMessage *msg)$/;"	f	class:siasun::joint_trajectory_streamer::SiasunJointTrajectoryStreamer
+create_messages	src/industrial_robot_client/joint_feedback_relay_handler.cpp	/^bool JointFeedbackRelayHandler::create_messages(SimpleMessage& msg_in,$/;"	f	class:industrial_robot_client::joint_feedback_relay_handler::JointFeedbackRelayHandler
+create_messages	src/industrial_robot_client/joint_relay_handler.cpp	/^bool JointRelayHandler::create_messages(SimpleMessage& msg_in,$/;"	f	class:industrial_robot_client::joint_relay_handler::JointRelayHandler
+ctrlGripper	src/motion_ctrl.cpp	/^bool SiasunMotionCtrl::ctrlGripper(bool hand, bool status)$/;"	f	class:siasun::motion_ctrl::SiasunMotionCtrl
+cur_joint_pos_	include/siasun_driver/industrial_robot_client/joint_trajectory_interface.h	/^  sensor_msgs::JointState cur_joint_pos_;  \/\/ cache of last received joint state$/;"	m	class:industrial_robot_client::joint_trajectory_interface::JointTrajectoryInterface
+cur_joint_pos_map_	include/siasun_driver/industrial_robot_client/joint_trajectory_interface.h	/^  std::map<int, sensor_msgs::JointState> cur_joint_pos_map_;$/;"	m	class:industrial_robot_client::joint_trajectory_interface::JointTrajectoryInterface
+current_point_	include/siasun_driver/industrial_robot_client/joint_trajectory_streamer.h	/^  int current_point_;$/;"	m	class:industrial_robot_client::joint_trajectory_streamer::JointTrajectoryStreamer
+current_traj_	include/siasun_driver/industrial_robot_client/joint_trajectory_streamer.h	/^  std::vector<SimpleMessage> current_traj_;$/;"	m	class:industrial_robot_client::joint_trajectory_streamer::JointTrajectoryStreamer
+data_	include/siasun_driver/simple_message/siasun_motion_ctrl.h	/^  industrial::shared_types::shared_real data_[MAX_DATA_CNT];$/;"	m	class:siasun::simple_message::motion_ctrl::MotionCtrl
+data_	include/siasun_driver/simple_message/siasun_motion_reply.h	/^  industrial::shared_types::shared_real data_[MAX_DATA_CNT];$/;"	m	class:siasun::simple_message::motion_reply::MotionReply
+default_duration_	include/siasun_driver/industrial_robot_client/joint_trajectory_interface.h	/^  double default_duration_;   \/\/ default duration to use for joint commands, if no$/;"	m	class:industrial_robot_client::joint_trajectory_interface::JointTrajectoryInterface
+default_joint_feedback_handler_	include/siasun_driver/industrial_robot_client/robot_state_interface.h	/^  JointFeedbackRelayHandler default_joint_feedback_handler_;$/;"	m	class:industrial_robot_client::robot_state_interface::RobotStateInterface
+default_joint_pos_	include/siasun_driver/industrial_robot_client/joint_trajectory_interface.h	/^  double default_joint_pos_;  \/\/ default position to use for "dummy joints", if none specified$/;"	m	class:industrial_robot_client::joint_trajectory_interface::JointTrajectoryInterface
+default_robot_status_handler_	include/siasun_driver/industrial_robot_client/robot_state_interface.h	/^  RobotStatusRelayHandler default_robot_status_handler_;$/;"	m	class:industrial_robot_client::robot_state_interface::RobotStateInterface
+default_tcp_connection_	include/siasun_driver/industrial_robot_client/joint_trajectory_interface.h	/^  TcpClient default_tcp_connection_;$/;"	m	class:industrial_robot_client::joint_trajectory_interface::JointTrajectoryInterface
+default_tcp_connection_	include/siasun_driver/industrial_robot_client/robot_state_interface.h	/^  TcpClient default_tcp_connection_;$/;"	m	class:industrial_robot_client::robot_state_interface::RobotStateInterface
+default_vel_ratio_	include/siasun_driver/industrial_robot_client/joint_trajectory_interface.h	/^  double default_vel_ratio_;  \/\/ default velocity ratio to use for joint commands, if no velocity or max_vel specified$/;"	m	class:industrial_robot_client::joint_trajectory_interface::JointTrajectoryInterface
+getCommand	include/siasun_driver/simple_message/siasun_motion_ctrl.h	/^  MotionControlCmd getCommand()$/;"	f	class:siasun::simple_message::motion_ctrl::MotionCtrl
+getCommand	include/siasun_driver/simple_message/siasun_motion_reply.h	/^  industrial::shared_types::shared_int getCommand() const$/;"	f	class:siasun::simple_message::motion_reply::MotionReply
+getData	include/siasun_driver/simple_message/siasun_motion_ctrl.h	/^  industrial::shared_types::shared_real getData(size_t idx)$/;"	f	class:siasun::simple_message::motion_ctrl::MotionCtrl
+getData	include/siasun_driver/simple_message/siasun_motion_reply.h	/^  industrial::shared_types::shared_real getData(size_t idx) const$/;"	f	class:siasun::simple_message::motion_reply::MotionReply
+getErrorString	src/motion_ctrl.cpp	/^std::string SiasunMotionCtrl::getErrorString(const MotionReply &reply)$/;"	f	class:siasun::motion_ctrl::SiasunMotionCtrl
+getResult	include/siasun_driver/simple_message/siasun_motion_reply.h	/^  industrial::shared_types::shared_int getResult() const$/;"	f	class:siasun::simple_message::motion_reply::MotionReply
+getResultString	include/siasun_driver/simple_message/siasun_motion_reply.h	/^  std::string getResultString() const$/;"	f	class:siasun::simple_message::motion_reply::MotionReply
+getResultString	src/simple_message/siasun_motion_reply.cpp	/^std::string MotionReply::getResultString(shared_int code)$/;"	f	class:siasun::simple_message::motion_reply::MotionReply
+getRobotID	include/siasun_driver/simple_message/siasun_motion_ctrl.h	/^  industrial::shared_types::shared_int getRobotID()$/;"	f	class:siasun::simple_message::motion_ctrl::MotionCtrl
+getRobotID	include/siasun_driver/simple_message/siasun_motion_reply.h	/^  industrial::shared_types::shared_int getRobotID() const$/;"	f	class:siasun::simple_message::motion_reply::MotionReply
+getSequence	include/siasun_driver/simple_message/siasun_motion_ctrl.h	/^  industrial::shared_types::shared_int getSequence()$/;"	f	class:siasun::simple_message::motion_ctrl::MotionCtrl
+getSequence	include/siasun_driver/simple_message/siasun_motion_reply.h	/^  industrial::shared_types::shared_int getSequence() const$/;"	f	class:siasun::simple_message::motion_reply::MotionReply
+getSubcode	include/siasun_driver/simple_message/siasun_motion_reply.h	/^  industrial::shared_types::shared_int getSubcode() const$/;"	f	class:siasun::simple_message::motion_reply::MotionReply
+getSubcodeString	include/siasun_driver/simple_message/siasun_motion_reply.h	/^  std::string getSubcodeString() const$/;"	f	class:siasun::simple_message::motion_reply::MotionReply
+getSubcodeString	src/simple_message/siasun_motion_reply.cpp	/^std::string MotionReply::getSubcodeString(shared_int code)$/;"	f	class:siasun::simple_message::motion_reply::MotionReply
+get_connection	include/siasun_driver/industrial_robot_client/robot_state_interface.h	/^  SmplMsgConnection* get_connection()$/;"	f	class:industrial_robot_client::robot_state_interface::RobotStateInterface
+get_cur_pos	src/move_to_joint.py	/^def get_cur_pos():$/;"	f
+get_joint_names	include/siasun_driver/industrial_robot_client/robot_state_interface.h	/^  std::vector<std::string> get_joint_names()$/;"	f	class:industrial_robot_client::robot_state_interface::RobotStateInterface
+get_joint_names	src/move_to_joint.py	/^def get_joint_names(num_joints):$/;"	f
+get_manager	include/siasun_driver/industrial_robot_client/robot_state_interface.h	/^  MessageManager* get_manager()$/;"	f	class:industrial_robot_client::robot_state_interface::RobotStateInterface
+get_pos_from_bag	src/move_to_joint.py	/^def get_pos_from_bag(bag_file, topic_name):$/;"	f
+gripperCtrl	src/industrial_robot_client/joint_trajectory_interface.cpp	/^void JointTrajectoryInterface::gripperCtrl(bool hand, bool status)$/;"	f	class:industrial_robot_client::joint_trajectory_interface::JointTrajectoryInterface
+gripperCtrl	src/joint_trajectory_streamer.cpp	/^void SiasunJointTrajectoryStreamer::gripperCtrl(bool hand, bool status)$/;"	f	class:siasun::joint_trajectory_streamer::SiasunJointTrajectoryStreamer
+gripperCtrlCB	src/industrial_robot_client/joint_trajectory_interface.cpp	/^bool JointTrajectoryInterface::gripperCtrlCB($/;"	f	class:industrial_robot_client::joint_trajectory_interface::JointTrajectoryInterface
+industrial_robot_client	include/siasun_driver/industrial_robot_client/joint_feedback_relay_handler.h	/^namespace industrial_robot_client$/;"	n
+industrial_robot_client	include/siasun_driver/industrial_robot_client/joint_relay_handler.h	/^namespace industrial_robot_client$/;"	n
+industrial_robot_client	include/siasun_driver/industrial_robot_client/joint_trajectory_interface.h	/^namespace industrial_robot_client$/;"	n
+industrial_robot_client	include/siasun_driver/industrial_robot_client/joint_trajectory_streamer.h	/^namespace industrial_robot_client$/;"	n
+industrial_robot_client	include/siasun_driver/industrial_robot_client/robot_state_interface.h	/^namespace industrial_robot_client$/;"	n
+industrial_robot_client	include/siasun_driver/industrial_robot_client/siasun_utils.h	/^namespace industrial_robot_client$/;"	n
+industrial_robot_client	src/industrial_robot_client/joint_feedback_relay_handler.cpp	/^namespace industrial_robot_client$/;"	n	file:
+industrial_robot_client	src/industrial_robot_client/joint_relay_handler.cpp	/^namespace industrial_robot_client$/;"	n	file:
+industrial_robot_client	src/industrial_robot_client/joint_trajectory_interface.cpp	/^namespace industrial_robot_client$/;"	n	file:
+industrial_robot_client	src/industrial_robot_client/joint_trajectory_streamer.cpp	/^namespace industrial_robot_client$/;"	n	file:
+industrial_robot_client	src/industrial_robot_client/robot_state_interface.cpp	/^namespace industrial_robot_client$/;"	n	file:
+init	include/siasun_driver/industrial_robot_client/joint_relay_handler.h	/^  virtual bool init(industrial::smpl_msg_connection::SmplMsgConnection* connection, std::vector<std::string> &joint_names)$/;"	f	class:industrial_robot_client::joint_relay_handler::JointRelayHandler
+init	src/industrial_robot_client/joint_feedback_relay_handler.cpp	/^bool JointFeedbackRelayHandler::init(SmplMsgConnection* connection,$/;"	f	class:industrial_robot_client::joint_feedback_relay_handler::JointFeedbackRelayHandler
+init	src/industrial_robot_client/joint_relay_handler.cpp	/^bool JointRelayHandler::init(SmplMsgConnection* connection, int msg_type, std::vector<std::string>& joint_names)$/;"	f	class:industrial_robot_client::joint_relay_handler::JointRelayHandler
+init	src/industrial_robot_client/joint_trajectory_interface.cpp	/^bool JointTrajectoryInterface::init(SmplMsgConnection* connection)$/;"	f	class:industrial_robot_client::joint_trajectory_interface::JointTrajectoryInterface
+init	src/industrial_robot_client/joint_trajectory_interface.cpp	/^bool JointTrajectoryInterface::init(SmplMsgConnection* connection, const std::vector<std::string> &joint_names,$/;"	f	class:industrial_robot_client::joint_trajectory_interface::JointTrajectoryInterface
+init	src/industrial_robot_client/joint_trajectory_interface.cpp	/^bool JointTrajectoryInterface::init(std::string default_ip, int default_port)$/;"	f	class:industrial_robot_client::joint_trajectory_interface::JointTrajectoryInterface
+init	src/industrial_robot_client/joint_trajectory_streamer.cpp	/^bool JointTrajectoryStreamer::init(SmplMsgConnection* connection, const std::vector<std::string> &joint_names,$/;"	f	class:industrial_robot_client::joint_trajectory_streamer::JointTrajectoryStreamer
+init	src/industrial_robot_client/robot_state_interface.cpp	/^bool RobotStateInterface::init(SmplMsgConnection* connection)$/;"	f	class:industrial_robot_client::robot_state_interface::RobotStateInterface
+init	src/industrial_robot_client/robot_state_interface.cpp	/^bool RobotStateInterface::init(SmplMsgConnection* connection, std::vector<std::string>& joint_names)$/;"	f	class:industrial_robot_client::robot_state_interface::RobotStateInterface
+init	src/industrial_robot_client/robot_state_interface.cpp	/^bool RobotStateInterface::init(std::string default_ip, int default_port)$/;"	f	class:industrial_robot_client::robot_state_interface::RobotStateInterface
+init	src/joint_trajectory_streamer.cpp	/^bool SiasunJointTrajectoryStreamer::init(SmplMsgConnection* connection, const std::vector<std::string> &joint_names,$/;"	f	class:siasun::joint_trajectory_streamer::SiasunJointTrajectoryStreamer
+init	src/motion_ctrl.cpp	/^bool SiasunMotionCtrl::init(SmplMsgConnection* connection, int robot_id)$/;"	f	class:siasun::motion_ctrl::SiasunMotionCtrl
+init	src/simple_message/siasun_motion_ctrl.cpp	/^void MotionCtrl::init()$/;"	f	class:siasun::simple_message::motion_ctrl::MotionCtrl
+init	src/simple_message/siasun_motion_ctrl.cpp	/^void MotionCtrl::init(shared_int robot_id, shared_int sequence,$/;"	f	class:siasun::simple_message::motion_ctrl::MotionCtrl
+init	src/simple_message/siasun_motion_ctrl_message.cpp	/^bool MotionCtrlMessage::init(SimpleMessage & msg)$/;"	f	class:siasun::simple_message::motion_ctrl_message::MotionCtrlMessage
+init	src/simple_message/siasun_motion_ctrl_message.cpp	/^void MotionCtrlMessage::init()$/;"	f	class:siasun::simple_message::motion_ctrl_message::MotionCtrlMessage
+init	src/simple_message/siasun_motion_ctrl_message.cpp	/^void MotionCtrlMessage::init(MotionCtrl & cmd)$/;"	f	class:siasun::simple_message::motion_ctrl_message::MotionCtrlMessage
+init	src/simple_message/siasun_motion_reply.cpp	/^void MotionReply::init()$/;"	f	class:siasun::simple_message::motion_reply::MotionReply
+init	src/simple_message/siasun_motion_reply.cpp	/^void MotionReply::init(shared_int robot_id, shared_int sequence,$/;"	f	class:siasun::simple_message::motion_reply::MotionReply
+init	src/simple_message/siasun_motion_reply_message.cpp	/^bool MotionReplyMessage::init(SimpleMessage & msg)$/;"	f	class:siasun::simple_message::motion_reply_message::MotionReplyMessage
+init	src/simple_message/siasun_motion_reply_message.cpp	/^void MotionReplyMessage::init()$/;"	f	class:siasun::simple_message::motion_reply_message::MotionReplyMessage
+init	src/simple_message/siasun_motion_reply_message.cpp	/^void MotionReplyMessage::init(MotionReply & reply)$/;"	f	class:siasun::simple_message::motion_reply_message::MotionReplyMessage
+internalCB	src/industrial_robot_client/joint_relay_handler.cpp	/^bool JointRelayHandler::internalCB(SimpleMessage& msg_in)$/;"	f	class:industrial_robot_client::joint_relay_handler::JointRelayHandler
+is_valid	src/industrial_robot_client/joint_trajectory_interface.cpp	/^bool JointTrajectoryInterface::is_valid(const trajectory_msgs::JointTrajectory &traj)$/;"	f	class:industrial_robot_client::joint_trajectory_interface::JointTrajectoryInterface
+is_valid	src/joint_trajectory_streamer.cpp	/^bool SiasunJointTrajectoryStreamer::is_valid(const trajectory_msgs::JointTrajectory &traj)$/;"	f	class:siasun::joint_trajectory_streamer::SiasunJointTrajectoryStreamer
+jointStateCB	src/industrial_robot_client/joint_trajectory_interface.cpp	/^void JointTrajectoryInterface::jointStateCB($/;"	f	class:industrial_robot_client::joint_trajectory_interface::JointTrajectoryInterface
+jointTrajectoryCB	src/industrial_robot_client/joint_trajectory_interface.cpp	/^bool JointTrajectoryInterface::jointTrajectoryCB($/;"	f	class:industrial_robot_client::joint_trajectory_interface::JointTrajectoryInterface
+jointTrajectoryCB	src/industrial_robot_client/joint_trajectory_interface.cpp	/^void JointTrajectoryInterface::jointTrajectoryCB($/;"	f	class:industrial_robot_client::joint_trajectory_interface::JointTrajectoryInterface
+jointTrajectoryCB	src/industrial_robot_client/joint_trajectory_streamer.cpp	/^void JointTrajectoryStreamer::jointTrajectoryCB(const trajectory_msgs::JointTrajectoryConstPtr &msg)$/;"	f	class:industrial_robot_client::joint_trajectory_streamer::JointTrajectoryStreamer
+joint_feedback_relay_handler	include/siasun_driver/industrial_robot_client/joint_feedback_relay_handler.h	/^namespace joint_feedback_relay_handler$/;"	n	namespace:industrial_robot_client
+joint_feedback_relay_handler	src/industrial_robot_client/joint_feedback_relay_handler.cpp	/^namespace joint_feedback_relay_handler$/;"	n	namespace:industrial_robot_client	file:
+joint_names_	include/siasun_driver/industrial_robot_client/robot_state_interface.h	/^  std::vector<std::string> joint_names_;$/;"	m	class:industrial_robot_client::robot_state_interface::RobotStateInterface
+joint_relay_handler	include/siasun_driver/industrial_robot_client/joint_relay_handler.h	/^namespace joint_relay_handler$/;"	n	namespace:industrial_robot_client
+joint_relay_handler	src/industrial_robot_client/joint_relay_handler.cpp	/^namespace joint_relay_handler$/;"	n	namespace:industrial_robot_client	file:
+joint_trajectory_interface	include/siasun_driver/industrial_robot_client/joint_trajectory_interface.h	/^namespace joint_trajectory_interface$/;"	n	namespace:industrial_robot_client
+joint_trajectory_interface	src/industrial_robot_client/joint_trajectory_interface.cpp	/^namespace joint_trajectory_interface$/;"	n	namespace:industrial_robot_client	file:
+joint_trajectory_streamer	include/siasun_driver/industrial_robot_client/joint_trajectory_streamer.h	/^namespace joint_trajectory_streamer$/;"	n	namespace:industrial_robot_client
+joint_trajectory_streamer	include/siasun_driver/joint_trajectory_streamer.h	/^namespace joint_trajectory_streamer$/;"	n	namespace:siasun
+joint_trajectory_streamer	src/industrial_robot_client/joint_trajectory_streamer.cpp	/^namespace joint_trajectory_streamer$/;"	n	namespace:industrial_robot_client	file:
+joint_trajectory_streamer	src/joint_trajectory_streamer.cpp	/^namespace joint_trajectory_streamer$/;"	n	namespace:siasun	file:
+joint_vel_limits_	include/siasun_driver/industrial_robot_client/joint_trajectory_interface.h	/^  std::map<std::string, double> joint_vel_limits_;  \/\/ cache of max joint velocities from URDF$/;"	m	class:industrial_robot_client::joint_trajectory_interface::JointTrajectoryInterface
+load	src/simple_message/siasun_motion_ctrl.cpp	/^bool MotionCtrl::load(industrial::byte_array::ByteArray *buffer)$/;"	f	class:siasun::simple_message::motion_ctrl::MotionCtrl
+load	src/simple_message/siasun_motion_ctrl_message.cpp	/^bool MotionCtrlMessage::load(ByteArray *buffer)$/;"	f	class:siasun::simple_message::motion_ctrl_message::MotionCtrlMessage
+load	src/simple_message/siasun_motion_reply.cpp	/^bool MotionReply::load(industrial::byte_array::ByteArray *buffer)$/;"	f	class:siasun::simple_message::motion_reply::MotionReply
+load	src/simple_message/siasun_motion_reply_message.cpp	/^bool MotionReplyMessage::load(ByteArray *buffer)$/;"	f	class:siasun::simple_message::motion_reply_message::MotionReplyMessage
+main	src/joint_streaming_node.cpp	/^int main(int argc, char** argv)$/;"	f
+main	src/move_to_joint.py	/^def main(argv):$/;"	f
+main	src/robot_state_node.cpp	/^int main(int argc, char** argv)$/;"	f
+manager_	include/siasun_driver/industrial_robot_client/robot_state_interface.h	/^  MessageManager manager_;$/;"	m	class:industrial_robot_client::robot_state_interface::RobotStateInterface
+min_buffer_size_	include/siasun_driver/industrial_robot_client/joint_trajectory_streamer.h	/^  int min_buffer_size_;$/;"	m	class:industrial_robot_client::joint_trajectory_streamer::JointTrajectoryStreamer
+motion_ctrl	include/siasun_driver/motion_ctrl.h	/^namespace motion_ctrl$/;"	n	namespace:siasun
+motion_ctrl	include/siasun_driver/simple_message/siasun_motion_ctrl.h	/^namespace motion_ctrl$/;"	n	namespace:siasun::simple_message
+motion_ctrl	src/motion_ctrl.cpp	/^namespace motion_ctrl$/;"	n	namespace:siasun	file:
+motion_ctrl	src/simple_message/siasun_motion_ctrl.cpp	/^namespace motion_ctrl$/;"	n	namespace:siasun::simple_message	file:
+motion_ctrl_	include/siasun_driver/joint_trajectory_streamer.h	/^  SiasunMotionCtrl motion_ctrl_;$/;"	m	class:siasun::joint_trajectory_streamer::SiasunJointTrajectoryStreamer
+motion_ctrl_map_	include/siasun_driver/joint_trajectory_streamer.h	/^  std::map<int, SiasunMotionCtrl> motion_ctrl_map_;$/;"	m	class:siasun::joint_trajectory_streamer::SiasunJointTrajectoryStreamer
+motion_ctrl_message	include/siasun_driver/simple_message/siasun_motion_ctrl_message.h	/^namespace motion_ctrl_message$/;"	n	namespace:siasun::simple_message
+motion_ctrl_message	src/simple_message/siasun_motion_ctrl_message.cpp	/^namespace motion_ctrl_message$/;"	n	namespace:siasun::simple_message	file:
+motion_reply	include/siasun_driver/simple_message/siasun_motion_reply.h	/^namespace motion_reply$/;"	n	namespace:siasun::simple_message
+motion_reply	src/simple_message/siasun_motion_reply.cpp	/^namespace motion_reply$/;"	n	namespace:siasun::simple_message	file:
+motion_reply_message	include/siasun_driver/simple_message/siasun_motion_reply_message.h	/^namespace motion_reply_message$/;"	n	namespace:siasun::simple_message
+motion_reply_message	src/simple_message/siasun_motion_reply_message.cpp	/^namespace motion_reply_message$/;"	n	namespace:siasun::simple_message	file:
+move_to_joint	src/move_to_joint.py	/^def move_to_joint(end_pos, duration):$/;"	f
+mutex_	include/siasun_driver/industrial_robot_client/joint_trajectory_streamer.h	/^  boost::mutex mutex_;$/;"	m	class:industrial_robot_client::joint_trajectory_streamer::JointTrajectoryStreamer
+node_	include/siasun_driver/industrial_robot_client/joint_relay_handler.h	/^  ros::NodeHandle node_;$/;"	m	class:industrial_robot_client::joint_relay_handler::JointRelayHandler
+node_	include/siasun_driver/industrial_robot_client/joint_trajectory_interface.h	/^  ros::NodeHandle node_;$/;"	m	class:industrial_robot_client::joint_trajectory_interface::JointTrajectoryInterface
+operator ==	src/simple_message/siasun_motion_ctrl.cpp	/^bool MotionCtrl::operator==(MotionCtrl &rhs)$/;"	f	class:siasun::simple_message::motion_ctrl::MotionCtrl
+operator ==	src/simple_message/siasun_motion_reply.cpp	/^bool MotionReply::operator==(MotionReply &rhs)$/;"	f	class:siasun::simple_message::motion_reply::MotionReply
+parse_args	src/move_to_joint.py	/^def parse_args(args):$/;"	f
+pos_stale_time_	include/siasun_driver/joint_trajectory_streamer.h	/^  static const double pos_stale_time_ = 1.0;  \/\/ max time since last "current position" update, for validation (sec)$/;"	m	class:siasun::joint_trajectory_streamer::SiasunJointTrajectoryStreamer
+print_usage	src/move_to_joint.py	/^def print_usage():$/;"	f
+pub_controls_	include/siasun_driver/industrial_robot_client/joint_relay_handler.h	/^  std::map<int, ros::Publisher> pub_controls_;$/;"	m	class:industrial_robot_client::joint_relay_handler::JointRelayHandler
+pub_joint_control_state_	include/siasun_driver/industrial_robot_client/joint_relay_handler.h	/^  ros::Publisher pub_joint_control_state_;$/;"	m	class:industrial_robot_client::joint_relay_handler::JointRelayHandler
+pub_joint_sensor_state_	include/siasun_driver/industrial_robot_client/joint_relay_handler.h	/^  ros::Publisher pub_joint_sensor_state_;$/;"	m	class:industrial_robot_client::joint_relay_handler::JointRelayHandler
+pub_states_	include/siasun_driver/industrial_robot_client/joint_relay_handler.h	/^  std::map<int, ros::Publisher> pub_states_;$/;"	m	class:industrial_robot_client::joint_relay_handler::JointRelayHandler
+rbt_JointTrajPt	src/industrial_robot_client/joint_trajectory_interface.cpp	/^typedef industrial::joint_traj_pt::JointTrajPt rbt_JointTrajPt;$/;"	t	file:
+reply_	include/siasun_driver/simple_message/siasun_motion_reply_message.h	/^  siasun::simple_message::motion_reply::MotionReply reply_;$/;"	m	class:siasun::simple_message::motion_reply_message::MotionReplyMessage
+result_	include/siasun_driver/simple_message/siasun_motion_reply.h	/^  industrial::shared_types::shared_int result_;$/;"	m	class:siasun::simple_message::motion_reply::MotionReply
+robot_id_	include/siasun_driver/joint_trajectory_streamer.h	/^  int robot_id_;$/;"	m	class:siasun::joint_trajectory_streamer::SiasunJointTrajectoryStreamer
+robot_id_	include/siasun_driver/motion_ctrl.h	/^  int robot_id_;$/;"	m	class:siasun::motion_ctrl::SiasunMotionCtrl
+robot_id_	include/siasun_driver/simple_message/siasun_motion_ctrl.h	/^  industrial::shared_types::shared_int robot_id_;$/;"	m	class:siasun::simple_message::motion_ctrl::MotionCtrl
+robot_id_	include/siasun_driver/simple_message/siasun_motion_reply.h	/^  industrial::shared_types::shared_int robot_id_;$/;"	m	class:siasun::simple_message::motion_reply::MotionReply
+robot_state_interface	include/siasun_driver/industrial_robot_client/robot_state_interface.h	/^namespace robot_state_interface$/;"	n	namespace:industrial_robot_client
+robot_state_interface	src/industrial_robot_client/robot_state_interface.cpp	/^namespace robot_state_interface$/;"	n	namespace:industrial_robot_client	file:
+ros_JointTrajPt	src/industrial_robot_client/joint_trajectory_interface.cpp	/^typedef trajectory_msgs::JointTrajectoryPoint  ros_JointTrajPt;$/;"	t	file:
+ros_dynamicPoint	src/industrial_robot_client/joint_trajectory_interface.cpp	/^typedef motoman_msgs::DynamicJointsGroup ros_dynamicPoint;$/;"	t	file:
+run	include/siasun_driver/industrial_robot_client/joint_trajectory_interface.h	/^  virtual void run()$/;"	f	class:industrial_robot_client::joint_trajectory_interface::JointTrajectoryInterface
+run	src/industrial_robot_client/robot_state_interface.cpp	/^void RobotStateInterface::run()$/;"	f	class:industrial_robot_client::robot_state_interface::RobotStateInterface
+select	src/industrial_robot_client/joint_relay_handler.cpp	/^bool JointRelayHandler::select(const JointTrajectoryPoint& all_joint_state, const std::vector<std::string>& all_joint_names,$/;"	f	class:industrial_robot_client::joint_relay_handler::JointRelayHandler
+select	src/industrial_robot_client/joint_trajectory_interface.cpp	/^bool JointTrajectoryInterface::select($/;"	f	class:industrial_robot_client::joint_trajectory_interface::JointTrajectoryInterface
+sendAndReceive	src/motion_ctrl.cpp	/^bool SiasunMotionCtrl::sendAndReceive(MotionControlCmd command, MotionReply &reply)$/;"	f	class:siasun::motion_ctrl::SiasunMotionCtrl
+sendAndReceive	src/motion_ctrl.cpp	/^bool SiasunMotionCtrl::sendAndReceive(MotionControlCmd command, MotionReply &reply, bool hand, bool status)$/;"	f	class:siasun::motion_ctrl::SiasunMotionCtrl
+send_to_robot	src/industrial_robot_client/joint_trajectory_streamer.cpp	/^bool JointTrajectoryStreamer::send_to_robot(const std::vector<SimpleMessage>& messages)$/;"	f	class:industrial_robot_client::joint_trajectory_streamer::JointTrajectoryStreamer
+send_to_robot	src/joint_trajectory_streamer.cpp	/^bool SiasunJointTrajectoryStreamer::send_to_robot(const std::vector<SimpleMessage>& messages)$/;"	f	class:siasun::joint_trajectory_streamer::SiasunJointTrajectoryStreamer
+sequence_	include/siasun_driver/simple_message/siasun_motion_ctrl.h	/^  industrial::shared_types::shared_int sequence_;$/;"	m	class:siasun::simple_message::motion_ctrl::MotionCtrl
+sequence_	include/siasun_driver/simple_message/siasun_motion_reply.h	/^  industrial::shared_types::shared_int sequence_;$/;"	m	class:siasun::simple_message::motion_reply::MotionReply
+setCommand	include/siasun_driver/simple_message/siasun_motion_ctrl.h	/^  void setCommand(MotionControlCmd command)$/;"	f	class:siasun::simple_message::motion_ctrl::MotionCtrl
+setCommand	include/siasun_driver/simple_message/siasun_motion_reply.h	/^  void setCommand(industrial::shared_types::shared_int command)$/;"	f	class:siasun::simple_message::motion_reply::MotionReply
+setData	include/siasun_driver/simple_message/siasun_motion_ctrl.h	/^  void setData(size_t idx, industrial::shared_types::shared_real val)$/;"	f	class:siasun::simple_message::motion_ctrl::MotionCtrl
+setData	include/siasun_driver/simple_message/siasun_motion_reply.h	/^  void setData(size_t idx, industrial::shared_types::shared_real val)$/;"	f	class:siasun::simple_message::motion_reply::MotionReply
+setResult	include/siasun_driver/simple_message/siasun_motion_reply.h	/^  void setResult(industrial::shared_types::shared_int result)$/;"	f	class:siasun::simple_message::motion_reply::MotionReply
+setRobotID	include/siasun_driver/simple_message/siasun_motion_ctrl.h	/^  void setRobotID(industrial::shared_types::shared_int robot_id)$/;"	f	class:siasun::simple_message::motion_ctrl::MotionCtrl
+setRobotID	include/siasun_driver/simple_message/siasun_motion_reply.h	/^  void setRobotID(industrial::shared_types::shared_int robot_id)$/;"	f	class:siasun::simple_message::motion_reply::MotionReply
+setSequence	include/siasun_driver/simple_message/siasun_motion_ctrl.h	/^  void setSequence(industrial::shared_types::shared_int sequence)$/;"	f	class:siasun::simple_message::motion_ctrl::MotionCtrl
+setSequence	include/siasun_driver/simple_message/siasun_motion_reply.h	/^  void setSequence(industrial::shared_types::shared_int sequence)$/;"	f	class:siasun::simple_message::motion_reply::MotionReply
+setSubcode	include/siasun_driver/simple_message/siasun_motion_reply.h	/^  void setSubcode(industrial::shared_types::shared_int subcode)$/;"	f	class:siasun::simple_message::motion_reply::MotionReply
+setTrajMode	src/motion_ctrl.cpp	/^bool SiasunMotionCtrl::setTrajMode(bool enable)$/;"	f	class:siasun::motion_ctrl::SiasunMotionCtrl
+siasun	include/siasun_driver/joint_trajectory_streamer.h	/^namespace siasun$/;"	n
+siasun	include/siasun_driver/motion_ctrl.h	/^namespace siasun$/;"	n
+siasun	include/siasun_driver/simple_message/siasun_motion_ctrl.h	/^namespace siasun$/;"	n
+siasun	include/siasun_driver/simple_message/siasun_motion_ctrl_message.h	/^namespace siasun$/;"	n
+siasun	include/siasun_driver/simple_message/siasun_motion_reply.h	/^namespace siasun$/;"	n
+siasun	include/siasun_driver/simple_message/siasun_motion_reply_message.h	/^namespace siasun$/;"	n
+siasun	include/siasun_driver/simple_message/siasun_simple_message.h	/^namespace siasun$/;"	n
+siasun	src/joint_trajectory_streamer.cpp	/^namespace siasun$/;"	n	file:
+siasun	src/motion_ctrl.cpp	/^namespace siasun$/;"	n	file:
+siasun	src/simple_message/siasun_motion_ctrl.cpp	/^namespace siasun$/;"	n	file:
+siasun	src/simple_message/siasun_motion_ctrl_message.cpp	/^namespace siasun$/;"	n	file:
+siasun	src/simple_message/siasun_motion_reply.cpp	/^namespace siasun$/;"	n	file:
+siasun	src/simple_message/siasun_motion_reply_message.cpp	/^namespace siasun$/;"	n	file:
+siasun_utils	include/siasun_driver/industrial_robot_client/siasun_utils.h	/^namespace siasun_utils$/;"	n	namespace:industrial_robot_client
+simple_message	include/siasun_driver/simple_message/siasun_motion_ctrl.h	/^namespace simple_message$/;"	n	namespace:siasun
+simple_message	include/siasun_driver/simple_message/siasun_motion_ctrl_message.h	/^namespace simple_message$/;"	n	namespace:siasun
+simple_message	include/siasun_driver/simple_message/siasun_motion_reply.h	/^namespace simple_message$/;"	n	namespace:siasun
+simple_message	include/siasun_driver/simple_message/siasun_motion_reply_message.h	/^namespace simple_message$/;"	n	namespace:siasun
+simple_message	include/siasun_driver/simple_message/siasun_simple_message.h	/^namespace simple_message$/;"	n	namespace:siasun
+simple_message	src/simple_message/siasun_motion_ctrl.cpp	/^namespace simple_message$/;"	n	namespace:siasun	file:
+simple_message	src/simple_message/siasun_motion_ctrl_message.cpp	/^namespace simple_message$/;"	n	namespace:siasun	file:
+simple_message	src/simple_message/siasun_motion_reply.cpp	/^namespace simple_message$/;"	n	namespace:siasun	file:
+simple_message	src/simple_message/siasun_motion_reply_message.cpp	/^namespace simple_message$/;"	n	namespace:siasun	file:
+srv_gripper_ctrl_	include/siasun_driver/industrial_robot_client/joint_trajectory_interface.h	/^  ros::ServiceServer srv_gripper_ctrl_;  \/\/ lgb control the gripper open or close$/;"	m	class:industrial_robot_client::joint_trajectory_interface::JointTrajectoryInterface
+srv_joint_trajectory_	include/siasun_driver/industrial_robot_client/joint_trajectory_interface.h	/^  ros::ServiceServer srv_joint_trajectory_;  \/\/ handle for joint-trajectory service$/;"	m	class:industrial_robot_client::joint_trajectory_interface::JointTrajectoryInterface
+srv_joints_	include/siasun_driver/industrial_robot_client/joint_trajectory_interface.h	/^  std::map<int, ros::ServiceServer> srv_joints_;$/;"	m	class:industrial_robot_client::joint_trajectory_interface::JointTrajectoryInterface
+srv_stop_motion_	include/siasun_driver/industrial_robot_client/joint_trajectory_interface.h	/^  ros::ServiceServer srv_stop_motion_;   \/\/ handle for stop_motion service$/;"	m	class:industrial_robot_client::joint_trajectory_interface::JointTrajectoryInterface
+srv_stops_	include/siasun_driver/industrial_robot_client/joint_trajectory_interface.h	/^  std::map<int, ros::ServiceServer> srv_stops_;$/;"	m	class:industrial_robot_client::joint_trajectory_interface::JointTrajectoryInterface
+start_pos_tol_	include/siasun_driver/joint_trajectory_streamer.h	/^  static const double start_pos_tol_  = 1e-1;$/;"	m	class:siasun::joint_trajectory_streamer::SiasunJointTrajectoryStreamer
+state_	include/siasun_driver/industrial_robot_client/joint_trajectory_streamer.h	/^  TransferState state_;$/;"	m	class:industrial_robot_client::joint_trajectory_streamer::JointTrajectoryStreamer
+stopMotionCB	src/industrial_robot_client/joint_trajectory_interface.cpp	/^bool JointTrajectoryInterface::stopMotionCB($/;"	f	class:industrial_robot_client::joint_trajectory_interface::JointTrajectoryInterface
+stopTrajectory	src/motion_ctrl.cpp	/^bool SiasunMotionCtrl::stopTrajectory()$/;"	f	class:siasun::motion_ctrl::SiasunMotionCtrl
+streamingThread	src/industrial_robot_client/joint_trajectory_streamer.cpp	/^void JointTrajectoryStreamer::streamingThread()$/;"	f	class:industrial_robot_client::joint_trajectory_streamer::JointTrajectoryStreamer
+streamingThread	src/joint_trajectory_streamer.cpp	/^void SiasunJointTrajectoryStreamer::streamingThread()$/;"	f	class:siasun::joint_trajectory_streamer::SiasunJointTrajectoryStreamer
+streaming_start_	include/siasun_driver/industrial_robot_client/joint_trajectory_streamer.h	/^  ros::Time streaming_start_;$/;"	m	class:industrial_robot_client::joint_trajectory_streamer::JointTrajectoryStreamer
+streaming_thread_	include/siasun_driver/industrial_robot_client/joint_trajectory_streamer.h	/^  boost::thread* streaming_thread_;$/;"	m	class:industrial_robot_client::joint_trajectory_streamer::JointTrajectoryStreamer
+sub_cur_pos_	include/siasun_driver/industrial_robot_client/joint_trajectory_interface.h	/^  ros::Subscriber sub_cur_pos_;  \/\/ handle for joint-state topic subscription$/;"	m	class:industrial_robot_client::joint_trajectory_interface::JointTrajectoryInterface
+sub_cur_positions_	include/siasun_driver/industrial_robot_client/joint_trajectory_interface.h	/^  std::map<int, ros::Subscriber> sub_cur_positions_;$/;"	m	class:industrial_robot_client::joint_trajectory_interface::JointTrajectoryInterface
+sub_joint_trajectories_	include/siasun_driver/industrial_robot_client/joint_trajectory_interface.h	/^  std::map<int, ros::Subscriber> sub_joint_trajectories_;$/;"	m	class:industrial_robot_client::joint_trajectory_interface::JointTrajectoryInterface
+sub_joint_trajectory_	include/siasun_driver/industrial_robot_client/joint_trajectory_interface.h	/^  ros::Subscriber sub_joint_trajectory_;  \/\/ handle for joint-trajectory topic subscription$/;"	m	class:industrial_robot_client::joint_trajectory_interface::JointTrajectoryInterface
+subcode_	include/siasun_driver/simple_message/siasun_motion_reply.h	/^  industrial::shared_types::shared_int subcode_;$/;"	m	class:siasun::simple_message::motion_reply::MotionReply
+trajectoryStop	src/industrial_robot_client/joint_trajectory_interface.cpp	/^void JointTrajectoryInterface::trajectoryStop()$/;"	f	class:industrial_robot_client::joint_trajectory_interface::JointTrajectoryInterface
+trajectoryStop	src/industrial_robot_client/joint_trajectory_streamer.cpp	/^void JointTrajectoryStreamer::trajectoryStop()$/;"	f	class:industrial_robot_client::joint_trajectory_streamer::JointTrajectoryStreamer
+trajectoryStop	src/joint_trajectory_streamer.cpp	/^void SiasunJointTrajectoryStreamer::trajectoryStop()$/;"	f	class:siasun::joint_trajectory_streamer::SiasunJointTrajectoryStreamer
+trajectory_to_msgs	src/industrial_robot_client/joint_trajectory_interface.cpp	/^bool JointTrajectoryInterface::trajectory_to_msgs($/;"	f	class:industrial_robot_client::joint_trajectory_interface::JointTrajectoryInterface
+trajectory_to_msgs	src/industrial_robot_client/joint_trajectory_streamer.cpp	/^bool JointTrajectoryStreamer::trajectory_to_msgs(const trajectory_msgs::JointTrajectoryConstPtr &traj, std::vector<SimpleMessage>* msgs)$/;"	f	class:industrial_robot_client::joint_trajectory_streamer::JointTrajectoryStreamer
+transform	include/siasun_driver/industrial_robot_client/joint_relay_handler.h	/^  virtual bool transform(const JointTrajectoryPoint& state_in, JointTrajectoryPoint* state_out)$/;"	f	class:industrial_robot_client::joint_relay_handler::JointRelayHandler
+transform	include/siasun_driver/industrial_robot_client/joint_trajectory_interface.h	/^  virtual bool transform(const trajectory_msgs::JointTrajectoryPoint& pt_in, trajectory_msgs::JointTrajectoryPoint* pt_out)$/;"	f	class:industrial_robot_client::joint_trajectory_interface::JointTrajectoryInterface
+unload	src/simple_message/siasun_motion_ctrl.cpp	/^bool MotionCtrl::unload(industrial::byte_array::ByteArray *buffer)$/;"	f	class:siasun::simple_message::motion_ctrl::MotionCtrl
+unload	src/simple_message/siasun_motion_ctrl_message.cpp	/^bool MotionCtrlMessage::unload(ByteArray *buffer)$/;"	f	class:siasun::simple_message::motion_ctrl_message::MotionCtrlMessage
+unload	src/simple_message/siasun_motion_reply.cpp	/^bool MotionReply::unload(industrial::byte_array::ByteArray *buffer)$/;"	f	class:siasun::simple_message::motion_reply::MotionReply
+unload	src/simple_message/siasun_motion_reply_message.cpp	/^bool MotionReplyMessage::unload(ByteArray *buffer)$/;"	f	class:siasun::simple_message::motion_reply_message::MotionReplyMessage
+wait_for_subs	src/move_to_joint.py	/^def wait_for_subs(pub, num_subs, min_time, timeout):$/;"	f
+~JointTrajectoryInterface	src/industrial_robot_client/joint_trajectory_interface.cpp	/^JointTrajectoryInterface::~JointTrajectoryInterface()$/;"	f	class:industrial_robot_client::joint_trajectory_interface::JointTrajectoryInterface
+~JointTrajectoryStreamer	src/industrial_robot_client/joint_trajectory_streamer.cpp	/^JointTrajectoryStreamer::~JointTrajectoryStreamer()$/;"	f	class:industrial_robot_client::joint_trajectory_streamer::JointTrajectoryStreamer
+~MotionCtrl	src/simple_message/siasun_motion_ctrl.cpp	/^MotionCtrl::~MotionCtrl(void)$/;"	f	class:siasun::simple_message::motion_ctrl::MotionCtrl
+~MotionCtrlMessage	src/simple_message/siasun_motion_ctrl_message.cpp	/^MotionCtrlMessage::~MotionCtrlMessage(void)$/;"	f	class:siasun::simple_message::motion_ctrl_message::MotionCtrlMessage
+~MotionReply	src/simple_message/siasun_motion_reply.cpp	/^MotionReply::~MotionReply(void)$/;"	f	class:siasun::simple_message::motion_reply::MotionReply
+~MotionReplyMessage	src/simple_message/siasun_motion_reply_message.cpp	/^MotionReplyMessage::~MotionReplyMessage(void)$/;"	f	class:siasun::simple_message::motion_reply_message::MotionReplyMessage
+~SiasunJointTrajectoryStreamer	src/joint_trajectory_streamer.cpp	/^SiasunJointTrajectoryStreamer::~SiasunJointTrajectoryStreamer()$/;"	f	class:siasun::joint_trajectory_streamer::SiasunJointTrajectoryStreamer

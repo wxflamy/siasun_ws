@@ -1,0 +1,53 @@
+<launch>
+
+<!-- This launch file provides a socket-based connection to industrial robots
+     that implement the standard ROS Industrial simple_message protocol.
+     *** Motion control is implemented by STREAMING path data to the robot ***
+         (for DOWNLOAD-based path-control, use a different launch file)
+
+     Several nodes are started, to supply both low-level robot communication
+     and higher-level actionlib support:
+       - robot_state : publishes current joint positions and robot state data
+       - motion_streaming_interface : command robot motion by sending motion points to robot
+       - joint_trajectory_action : actionlib interface to control robot motion
+
+  Usage:
+    robot_interface_streaming.launch robot_ip:=<value> use_bswap:=<true,false>
+-->
+
+	<!-- version0: Older client without multi groups-support -->
+	<arg name="version0" />
+	
+	<!-- robot_ip: IP-address of the robot's socket-messaging server -->
+	<arg name="robot_ip" />
+
+	<!-- copy the specified parameters to the Parameter Server, for 
+	     use by nodes below -->
+	<param name="robot_ip_address" type="str" value="$(arg robot_ip)" />
+	<param name="version0" type="bool" value="$(arg version0)" />
+
+	<!-- robot_state: publishes joint positions and robot-state data
+	     (from socket connection to robot) launch-prefix="xterm -e ddd -args"
+	-->
+	<node name="joint_state" 
+                pkg="siasun_driver" type="robot_state" output="screen">
+                <!--remap from="/joint_states" to="/scr3_description/joint_states" /-->
+                </node>
+	<!-- motion_streaming_interface: sends robot motion commands by 
+	     STREAMING path to robot (using socket connection to robot) 
+	-->
+	<node name="motion_streaming_interface"
+		pkg="siasun_driver" type="motion_streaming_interface" output="screen" />
+	<!-- joint_trajectory_action: provides actionlib interface for 
+	     high-level robot control
+        -->
+        <node name="joint_trajectory_action"
+                pkg="industrial_robot_client" type="joint_trajectory_action" >
+                <!--remap from="/joint_trajectory_action" to="/joint_controller/joint_trajectory_action" /-->
+                </node>
+        <!--node name="joint_trajectory_action2"
+                pkg="industrial_robot_client" type="joint_trajectory_action" >
+                <remap from="/joint_trajectory_action2" to="/joint_trajectory_action" />
+                </node-->
+
+</launch>

@@ -1,0 +1,623 @@
+<robot
+  name="srxr_description">
+  <link name="world"/>
+  <joint name="fixed" type="fixed">
+    <parent link="world"/>
+    <child link="base_link"/>
+  </joint>
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-6.18220615097658E-06 -0.000110386205627814 0.0668513713138308"
+        rpy="0 0 0" />
+      <mass
+        value="3.12465417835035" />
+      <inertia
+        ixx="0.024049829815623"
+        ixy="5.5371124676366E-06"
+        ixz="-0.00024006401331017"
+        iyy="0.0242274478300809"
+        iyz="-2.21358552660643E-05"
+        izz="0.029864919468582" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://srxr_description/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.3 0.3 0.3 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://srxr_description/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="Link1">
+    <inertial>
+      <origin
+        xyz="-0.000128335511665832 0.0323463091239493 0.305165718491791"
+        rpy="0 0 0" />
+      <mass
+        value="1.96730291027439" />
+      <inertia
+        ixx="0.0150690524757784"
+        ixy="-1.12038982022748E-05"
+        ixz="-4.45687986097979E-06"
+        iyy="0.0160665734255536"
+        iyz="-0.00229312392126841"
+        izz="0.00952655545819821" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://srxr_description/meshes/Link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.0 0.0 0.650980392156863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://srxr_description/meshes/Link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint1"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 -6.123E-17 -1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="Link1" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-3"
+      upper="3"
+      effort="1"
+      velocity="1" />
+  </joint>
+  <link
+    name="Link2">
+    <inertial>
+      <origin
+        xyz="1.10567326507421E-05 -0.00946904329682434 0.0939290191650073"
+        rpy="0 0 0" />
+      <mass
+        value="1.78543772270184" />
+      <inertia
+        ixx="0.0161848642432049"
+        ixy="-1.51273608600718E-05"
+        ixz="-1.29116349344078E-06"
+        iyy="0.0158966771178665"
+        iyz="-0.00409508229104811"
+        izz="0.00726322203852272" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://srxr_description/meshes/Link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.592156862745098 0.619607843137255 0.650980392156863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://srxr_description/meshes/Link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint2"
+    type="revolute">
+    <origin
+      xyz="0 -0.025 0.36798"
+      rpy="0 0 0" />
+    <parent
+      link="Link1" />
+    <child
+      link="Link2" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-1.5"
+      upper="1.5"
+      effort="1"
+      velocity="1" />
+  </joint>
+  <link
+    name="Link3">
+    <inertial>
+      <origin
+        xyz="7.83337585782143E-05 -0.0313850622482414 0.0991454994740939"
+        rpy="0 0 0" />
+      <mass
+        value="1.39140784630814" />
+      <inertia
+        ixx="0.0080085320247766"
+        ixy="1.22389843085705E-06"
+        ixz="-3.50491870330462E-06"
+        iyy="0.00761689427758387"
+        iyz="0.00131227407294308"
+        izz="0.00474551558959007" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://srxr_description/meshes/Link3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.0 0.0 0.650980392156863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://srxr_description/meshes/Link3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint3"
+    type="revolute">
+    <origin
+      xyz="0 0.026 0.2425"
+      rpy="0 0 0" />
+    <parent
+      link="Link2" />
+    <child
+      link="Link3" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-3"
+      upper="3"
+      effort="1"
+      velocity="1" />
+  </joint>
+  <link
+    name="Link4">
+    <inertial>
+      <origin
+        xyz="0.0947908182016973 0.00801710990212005 2.83195897289312E-05"
+        rpy="0 0 0" />
+      <mass
+        value="1.464762990317" />
+      <inertia
+        ixx="0.00463862187935449"
+        ixy="0.00288786909093057"
+        ixz="4.42189506073793E-06"
+        iyy="0.0112891893760499"
+        iyz="-1.81533152688695E-06"
+        izz="0.0119504176710742" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://srxr_description/meshes/Link4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.592156862745098 0.619607843137255 0.650980392156863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://srxr_description/meshes/Link4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint4"
+    type="revolute">
+    <origin
+      xyz="0 0.025 0.1565"
+      rpy="0 0 0" />
+    <parent
+      link="Link3" />
+    <child
+      link="Link4" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-3.5"
+      upper="0.5"
+      effort="1"
+      velocity="1" />
+  </joint>
+  <link
+    name="Link5">
+    <inertial>
+      <origin
+        xyz="0.106843147230336 0.028700121029153 -3.60616018891813E-05"
+        rpy="0 0 0" />
+      <mass
+        value="1.02273548503604" />
+      <inertia
+        ixx="0.00296404585521642"
+        ixy="-0.000844024707503941"
+        ixz="3.40065091007364E-06"
+        iyy="0.00504265899484967"
+        iyz="7.16167595893799E-06"
+        izz="0.00558232355980157" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://srxr_description/meshes/Link5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.0 0.0 0.650980392156863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://srxr_description/meshes/Link5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint5"
+    type="revolute">
+    <origin
+      xyz="0.2375 -0.026 0"
+      rpy="0 0 0" />
+    <parent
+      link="Link4" />
+    <child
+      link="Link5" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-3"
+      upper="3"
+      effort="1"
+      velocity="1" />
+  </joint>
+  <link
+    name="Link6">
+    <inertial>
+      <origin
+        xyz="0.143694696380143 0.00111899399962873 -5.34945541851295E-05"
+        rpy="0 0 0" />
+      <mass
+        value="1.39121289741334" />
+      <inertia
+        ixx="0.00400822131179116"
+        ixy="-0.00439228373674704"
+        ixz="-9.75061318624305E-06"
+        iyy="0.0170317812117812"
+        iyz="-5.19630152466291E-06"
+        izz="0.0183671562443913" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://srxr_description/meshes/Link6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.592156862745098 0.619607843137255 0.650980392156863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://srxr_description/meshes/Link6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint6"
+    type="revolute">
+    <origin
+      xyz="0.1615 -0.025 0"
+      rpy="0 0 0" />
+    <parent
+      link="Link5" />
+    <child
+      link="Link6" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-1.5"
+      upper="1.5"
+      effort="1"
+      velocity="1" />
+  </joint>
+  <link
+    name="Link7">
+    <inertial>
+      <origin
+        xyz="-0.00443587816203461 -0.000123356437246191 6.9060937351817E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.104269808522713" />
+      <inertia
+        ixx="0.000120663494046372"
+        ixy="6.98616363357952E-08"
+        ixz="-3.91119441998265E-08"
+        iyy="6.09981740663254E-05"
+        iyz="8.42486933497855E-07"
+        izz="6.20313804954415E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://srxr_description/meshes/Link7.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.0 0.0 0.650980392156863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://srxr_description/meshes/Link7.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint7"
+    type="revolute">
+    <origin
+      xyz="0.2905 0.026 0"
+      rpy="0 0 0" />
+    <parent
+      link="Link6" />
+    <child
+      link="Link7" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-3"
+      upper="3"
+      effort="1"
+      velocity="1" />
+  </joint>
+  <!--link
+    name="Finger_base">
+    <inertial>
+      <origin
+        xyz="-4.46918209418814E-05 0.0569802146534003 9.48047560778154E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.353270996146669" />
+      <inertia
+        ixx="0.000522726086508595"
+        ixy="-3.31285881592398E-07"
+        ixz="-3.32466340547193E-07"
+        iyy="0.00022778146443319"
+        iyz="-5.72733470910404E-07"
+        izz="0.000627688903543576" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://srxr_description/meshes/Finger_base.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://srxr_description/meshes/Finger_base.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_finger"
+    type="fixed">
+    <origin
+      xyz="0.00349999999999995 0 0"
+      rpy="3.14159265358979 0 1.5707963267949" />
+    <parent
+      link="Link7" />
+    <child
+      link="Finger_base" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Finger1">
+    <inertial>
+      <origin
+        xyz="0.138015348513507 0.0369446180420451 -0.00118497721382949"
+        rpy="0 0 0" />
+      <mass
+        value="0.0431516484943214" />
+      <inertia
+        ixx="1.19979195590246E-05"
+        ixy="4.11051217943295E-07"
+        ixz="-5.07427520141974E-07"
+        iyy="3.83366689449567E-05"
+        iyz="1.38939221379224E-08"
+        izz="3.9148466789634E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://srxr_description/meshes/Finger1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://srxr_description/meshes/Finger1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_finger1"
+    type="prismatic">
+    <origin
+      xyz="0 -0.0035 0"
+      rpy="3.1416 0 1.5708" />
+    <parent
+      link="Finger_base" />
+    <child
+      link="Finger1" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-0.025"
+      upper="0"
+      effort="1"
+      velocity="1" />
+  </joint>
+  <link
+    name="Finger2">
+    <inertial>
+      <origin
+        xyz="0.138015348513508 -0.0369446180420455 -0.000192171772969929"
+        rpy="0 0 0" />
+      <mass
+        value="0.0431516484943205" />
+      <inertia
+        ixx="1.19727842378075E-05"
+        ixy="-4.11051217942777E-07"
+        ixz="1.84729929289098E-07"
+        iyy="3.83115336237384E-05"
+        iyz="-1.41615503519775E-07"
+        izz="3.91484667896324E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://srxr_description/meshes/Finger2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://srxr_description/meshes/Finger2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_finger2"
+    type="prismatic">
+    <origin
+      xyz="0 -0.0035 0"
+      rpy="3.1416 0 1.5708" />
+    <parent
+      link="Finger_base" />
+    <child
+      link="Finger2" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0.025"
+      effort="1"
+      velocity="1" />
+  </joint-->
+</robot>

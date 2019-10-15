@@ -1,0 +1,2 @@
+controller_joint_names: ['Joint1', 'Joint2', 'Joint3', 'Joint4', 'Joint5', 'Joint6', 'Joint7']
+#controller_gripper_names: ['Joint_finger1', 'Joint_finger2']
