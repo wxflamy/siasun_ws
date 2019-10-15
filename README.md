@@ -19,7 +19,5 @@ roslaunch srxr_moveit_config moveit_planning_execution.launch sim:=true
 ```
 rosrun srxr_moveit_config srxr_move_group_interface_tutorial
 ```
-
-<video id="video" controls="" preload="none" poster="http://om2bks7xs.bkt.clouddn.com/2017-08-26-Markdown-Advance-Video.jpg">
-<source id="mp4" src="https://github.com/wxflamy/siasun_ws/blob/master/xmedia/Screencast2019-10.mp4" type="video/mp4">
+<video src='https://raw.githubusercontent.com/wxflamy/siasun_ws/master/xmedia/Screencast2019-10.mp4' type='video/mp4' controls='controls'  width='100%' height='100%'>
 </video>
