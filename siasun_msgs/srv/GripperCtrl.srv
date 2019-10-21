@@ -1,0 +1,5 @@
+# Resume current robot motion (e.g. after stop_motion or robot fault)
+bool  hand 
+bool status
+---
+industrial_msgs/ServiceReturnCode code
