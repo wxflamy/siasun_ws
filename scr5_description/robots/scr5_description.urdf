@@ -1,0 +1,725 @@
+<robot
+  name="scr5_description">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.00356075417197677 -0.000529110423215357 0.0108757611721975"
+        rpy="0 0 0" />
+      <mass
+        value="0.348612004472702" />
+      <inertia
+        ixx="0.000442748050806661"
+        ixy="1.45112821481914E-05"
+        ixz="4.5817878730547E-07"
+        iyy="0.000442892071615718"
+        iyz="-3.81710317678014E-07"
+        izz="0.000854761866924042" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://scr5_description/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://scr5_description/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="Link1">
+    <inertial>
+      <origin
+        xyz="2.28451084816495E-06 0.0134385752592176 -0.01222700825931"
+        rpy="0 0 0" />
+      <mass
+        value="1.27000869895626" />
+      <inertia
+        ixx="0.00256054716136561"
+        ixy="2.19590799195399E-08"
+        ixz="-5.20550232753587E-08"
+        iyy="0.00230175008541621"
+        iyz="-0.000346986406544973"
+        izz="0.00257441561390502" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://scr5_description/meshes/Link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://scr5_description/meshes/Link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint1"
+    type="revolute">
+    <origin
+      xyz="0 0 0.0892"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Link1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3"
+      upper="3"
+      effort="3"
+      velocity="3" />
+    <dynamics damping="0.0" friction="0.0"/>
+  </joint>
+  <link
+    name="Link2">
+    <inertial>
+      <origin
+        xyz="0.21250000012473 -0.00644152858656682 8.10992939470623E-12"
+        rpy="0 0 0" />
+      <mass
+        value="4.82134223867609" />
+      <inertia
+        ixx="0.00771149023191162"
+        ixy="-2.91688762987102E-11"
+        ixz="1.19901783444831E-06"
+        iyy="0.123074537381337"
+        iyz="-2.03414959269536E-12"
+        izz="0.123226479019875" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://scr5_description/meshes/Link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://scr5_description/meshes/Link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint2"
+    type="revolute">
+    <origin
+      xyz="0 0.1357 0"
+      rpy="0 0 0" />
+    <parent
+      link="Link1" />
+    <child
+      link="Link2" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-3"
+      upper="0.1"
+      effort="3"
+      velocity="3" />
+  </joint>
+  <link
+    name="Link3">
+    <inertial>
+      <origin
+        xyz="0.171467266833041 0.00699880290512728 7.45875599825196E-07"
+        rpy="0 0 0" />
+      <mass
+        value="2.37403786053391" />
+      <inertia
+        ixx="0.00223908367637026"
+        ixy="0.00143634373319063"
+        ixz="9.39329729652002E-08"
+        iyy="0.0483049711092205"
+        iyz="2.66298976334624E-09"
+        izz="0.0483725289156919" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://scr5_description/meshes/Link3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://scr5_description/meshes/Link3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint3"
+    type="revolute">
+    <origin
+      xyz="0.425 -0.1197 0"
+      rpy="0 0 0" />
+    <parent
+      link="Link2" />
+    <child
+      link="Link3" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-3"
+      upper="3"
+      effort="3"
+      velocity="3" />
+  </joint>
+  <link
+    name="Link4">
+    <inertial>
+      <origin
+        xyz="-0.000101410600967466 0.0851220204121935 -0.00985518759950316"
+        rpy="0 0 0" />
+      <mass
+        value="0.371768379208516" />
+      <inertia
+        ixx="0.000336348974064035"
+        ixy="-3.06042904952292E-09"
+        ixz="-1.58952308719623E-09"
+        iyy="0.000304909157025707"
+        iyz="4.45606278330748E-05"
+        izz="0.00031301327146741" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://scr5_description/meshes/Link4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://scr5_description/meshes/Link4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint4"
+    type="revolute">
+    <origin
+      xyz="0.39243 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="Link3" />
+    <child
+      link="Link4" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-3"
+      upper="3"
+      effort="3"
+      velocity="3" />
+  </joint>
+  <link
+    name="Link5">
+    <inertial>
+      <origin
+        xyz="0.000101410600967355 0.00985518759950316 -0.0851220204121934"
+        rpy="0 0 0" />
+      <mass
+        value="0.371768379208516" />
+      <inertia
+        ixx="0.000336348974064035"
+        ixy="-1.58952308822099E-09"
+        ixz="-3.06042904950114E-09"
+        iyy="0.00031301327146741"
+        iyz="4.45606278330746E-05"
+        izz="0.000304909157025707" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://scr5_description/meshes/Link5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://scr5_description/meshes/Link5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint5"
+    type="revolute">
+    <origin
+      xyz="0 0.093 0"
+      rpy="0 0 0" />
+    <parent
+      link="Link4" />
+    <child
+      link="Link5" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-3"
+      upper="3"
+      effort="3"
+      velocity="3" />
+  </joint>
+  <link
+    name="Link6">
+    <inertial>
+      <origin
+        xyz="-0.000189982331376459 0.0632649389615557 9.62807481311168E-12"
+        rpy="0 0 0" />
+      <mass
+        value="0.139070793351925" />
+      <inertia
+        ixx="5.95495544713425E-05"
+        ixy="-2.02101857982597E-08"
+        ixz="5.71614830905989E-14"
+        iyy="9.58937815407397E-05"
+        iyz="6.51561948574825E-14"
+        izz="6.02481762886513E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://scr5_description/meshes/Link6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://scr5_description/meshes/Link6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint6"
+    type="revolute">
+    <origin
+      xyz="0 0 -0.093"
+      rpy="0 0 0" />
+    <parent
+      link="Link5" />
+    <child
+      link="Link6" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-4"
+      upper="3"
+      effort="3"
+      velocity="3" />
+  </joint>
+  <link
+    name="LinkEnd" />
+  <joint
+    name="Eff"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="Link6" />
+    <child
+      link="LinkEnd" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="LinkLid6">
+    <inertial>
+      <origin
+        xyz="0.00010009573976133 -0.0380812283332205 -0.0970713854311271"
+        rpy="0 0 0" />
+      <mass
+        value="0.144578380149003" />
+      <inertia
+        ixx="6.51792903612742E-05"
+        ixy="9.66461182462837E-11"
+        ixz="-4.53450560851049E-11"
+        iyy="9.63783060714846E-05"
+        iyz="1.21979820648802E-05"
+        izz="6.77847991037175E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://scr5_description/meshes/LinkLid6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.0 0.0 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://scr5_description/meshes/LinkLid6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="JointLid6"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="Link5" />
+    <child
+      link="LinkLid6" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="LinkLid5">
+    <inertial>
+      <origin
+        xyz="-0.00010009573976133 0.0970713854311272 0.0380812283332207"
+        rpy="0 0 0" />
+      <mass
+        value="0.144578380149002" />
+      <inertia
+        ixx="6.51792903612726E-05"
+        ixy="-4.53450560768908E-11"
+        ixz="9.66461185303678E-11"
+        iyy="6.77847991037169E-05"
+        iyz="1.21979820648802E-05"
+        izz="9.63783060714828E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://scr5_description/meshes/LinkLid5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.0 0.0 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://scr5_description/meshes/LinkLid5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="JointLid5"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="Link4" />
+    <child
+      link="LinkLid5" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="LinkLid4">
+    <inertial>
+      <origin
+        xyz="0.396501385431127 -0.0380813334320837 -6.05774216067001E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.144578380149003" />
+      <inertia
+        ixx="6.77847991037173E-05"
+        ixy="-1.21979820648803E-05"
+        ixz="4.53450562252114E-11"
+        iyy="9.63783060714839E-05"
+        iyz="9.66461180388092E-11"
+        izz="6.51792903612734E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://scr5_description/meshes/LinkLid4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.0 0.0 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://scr5_description/meshes/LinkLid4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="JointLid4"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="Link3" />
+    <child
+      link="LinkLid4" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="LinkLid2">
+    <inertial>
+      <origin
+        xyz="-0.00939377496427008 0.044116313837089 -6.40447749417072E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.285968292894263" />
+      <inertia
+        ixx="0.000278953027758872"
+        ixy="-6.64254662128654E-05"
+        ixz="-3.598294519826E-09"
+        iyy="0.000443683499639582"
+        iyz="-9.45328227718526E-10"
+        izz="0.000253974178316293" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://scr5_description/meshes/LinkLid2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.0 0.0 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://scr5_description/meshes/LinkLid2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="JointLid2"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="Link2" />
+    <child
+      link="LinkLid2" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="LinkLid3">
+    <inertial>
+      <origin
+        xyz="0.43439377496427 0.0441163138370891 6.40447751915074E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.285968292894263" />
+      <inertia
+        ixx="0.000278953027758872"
+        ixy="6.64254662128658E-05"
+        ixz="-3.59829451973986E-09"
+        iyy="0.00044368349963958"
+        iyz="9.45328227448044E-10"
+        izz="0.000253974178316291" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://scr5_description/meshes/LinkLid3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.0 0.0 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://scr5_description/meshes/LinkLid3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="JointLid3"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="Link2" />
+    <child
+      link="LinkLid3" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="LinkLid1">
+    <inertial>
+      <origin
+        xyz="-6.40447750141319E-08 -0.00939377496427015 0.0441163138370891"
+        rpy="0 0 0" />
+      <mass
+        value="0.285968292894263" />
+      <inertia
+        ixx="0.000253974178316292"
+        ixy="-3.59829451961607E-09"
+        ixz="-9.45328227740967E-10"
+        iyy="0.000278953027758873"
+        iyz="-6.64254662128655E-05"
+        izz="0.000443683499639581" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://scr5_description/meshes/LinkLid1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.0 0.0 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://scr5_description/meshes/LinkLid1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="JointLid1"
+    type="fixed">
+    <origin
+      xyz="0.003 0 0.0"
+      rpy="0 0 0" />
+    <parent
+      link="Link1" />
+    <child
+      link="LinkLid1" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>

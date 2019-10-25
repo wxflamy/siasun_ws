@@ -1,0 +1,3 @@
+<launch>
+    <rosparam command="load" file="$(find gcr5g_moveit_config)/config/sensors_3d.yaml" />
+</launch>

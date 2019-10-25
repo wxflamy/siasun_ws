@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: gcr5g_description
+    relative_path: robots/gcr5g_description.urdf
+    xacro_args: "--inorder "
+  SRDF:
+    relative_path: config/gcr5g_description.srdf
+  CONFIG:
+    author_name: WangXF
+    author_email: wangxiaofeng@siasun.com
+    generated_timestamp: 1571752717

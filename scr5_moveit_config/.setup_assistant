@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: scr5_description
+    relative_path: robots/scr5_description.urdf
+    xacro_args: "--inorder "
+  SRDF:
+    relative_path: config/scr5_description.srdf
+  CONFIG:
+    author_name: WangXF
+    author_email: wxflamy@outlook.com
+    generated_timestamp: 1553587489
