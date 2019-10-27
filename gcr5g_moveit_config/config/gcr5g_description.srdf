@@ -63,6 +63,14 @@
         <joint name="Joint5" value="0" />
         <joint name="Joint6" value="0" />
     </group_state>
+    <group_state name="home" group="arm">
+        <joint name="Joint1" value="0" />
+        <joint name="Joint2" value="0" />
+        <joint name="Joint3" value="0" />
+        <joint name="Joint4" value="0" />
+        <joint name="Joint5" value="0" />
+        <joint name="Joint6" value="0" />
+    </group_state>
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
     <end_effector name="eef" parent_link="Link6" group="gripper" />
     <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->
