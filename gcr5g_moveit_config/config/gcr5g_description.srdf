@@ -156,25 +156,33 @@
     <disable_collisions link1="Link6" link2="Link_gripper3" reason="Never" />
     <disable_collisions link1="Link6" link2="Link_gripper3_1" reason="Never" />
     <disable_collisions link1="Link6" link2="Link_gripper4" reason="Never" />
+    <disable_collisions link1="Link6" link2="link_line" reason="Adjacent" />
     <disable_collisions link1="Link_gripper" link2="Link_gripper1" reason="Adjacent" />
     <disable_collisions link1="Link_gripper" link2="Link_gripper1_1" reason="Never" />
     <disable_collisions link1="Link_gripper" link2="Link_gripper2" reason="Adjacent" />
     <disable_collisions link1="Link_gripper" link2="Link_gripper3" reason="Adjacent" />
     <disable_collisions link1="Link_gripper" link2="Link_gripper3_1" reason="Never" />
     <disable_collisions link1="Link_gripper" link2="Link_gripper4" reason="Adjacent" />
+    <disable_collisions link1="Link_gripper" link2="link_line" reason="Never" />
     <disable_collisions link1="Link_gripper1" link2="Link_gripper1_1" reason="Adjacent" />
     <disable_collisions link1="Link_gripper1" link2="Link_gripper2" reason="Never" />
     <disable_collisions link1="Link_gripper1" link2="Link_gripper3" reason="Never" />
     <disable_collisions link1="Link_gripper1" link2="Link_gripper3_1" reason="Never" />
     <disable_collisions link1="Link_gripper1" link2="Link_gripper4" reason="Never" />
+    <disable_collisions link1="Link_gripper1" link2="link_line" reason="Never" />
     <disable_collisions link1="Link_gripper1_1" link2="Link_gripper2" reason="Default" />
     <disable_collisions link1="Link_gripper1_1" link2="Link_gripper3" reason="Never" />
     <disable_collisions link1="Link_gripper1_1" link2="Link_gripper3_1" reason="Never" />
     <disable_collisions link1="Link_gripper1_1" link2="Link_gripper4" reason="Never" />
+    <disable_collisions link1="Link_gripper1_1" link2="link_line" reason="Never" />
     <disable_collisions link1="Link_gripper2" link2="Link_gripper3" reason="Never" />
     <disable_collisions link1="Link_gripper2" link2="Link_gripper3_1" reason="Never" />
     <disable_collisions link1="Link_gripper2" link2="Link_gripper4" reason="Never" />
+    <disable_collisions link1="Link_gripper2" link2="link_line" reason="Never" />
     <disable_collisions link1="Link_gripper3" link2="Link_gripper3_1" reason="Adjacent" />
     <disable_collisions link1="Link_gripper3" link2="Link_gripper4" reason="Never" />
+    <disable_collisions link1="Link_gripper3" link2="link_line" reason="Never" />
     <disable_collisions link1="Link_gripper3_1" link2="Link_gripper4" reason="Default" />
+    <disable_collisions link1="Link_gripper3_1" link2="link_line" reason="Never" />
+    <disable_collisions link1="Link_gripper4" link2="link_line" reason="Never" />
 </robot>

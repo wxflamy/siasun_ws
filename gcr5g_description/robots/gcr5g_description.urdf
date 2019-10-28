@@ -370,6 +370,42 @@
       </geometry>
     </collision>
   </link>
+  <link name="link_line">
+    <visual>
+      <origin rpy="0 0 0" xyz=" 0 0 0"/>
+      <geometry>
+        <cylinder length="0.03" radius="0.005"/>
+      </geometry>
+      <material name="blue">
+        <color rgba="1 1 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz=" 0 0 0"/>
+      <geometry>
+        <box size="0.005 0.005 0.03"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1"/>
+      <inertia
+				ixx="0.3342" ixy="0.0" ixz="0.0"
+				iyy="0.3342" iyz="0.0"
+				izz="0.0017"/>			
+    </inertial>
+  </link>
+  <joint
+    name="Joint_line"
+    type="fixed">
+    <origin
+      xyz="0 0.0525 0.055"
+      rpy="0 0 0" />
+    <parent
+      link="Link6" />
+    <child
+      link="link_line" />
+  </joint>
   <joint
     name="Joint6"
     type="revolute">
