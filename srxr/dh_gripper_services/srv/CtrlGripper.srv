@@ -1,0 +1,5 @@
+int64 force
+int64 pos
+---
+bool isSuc
+
