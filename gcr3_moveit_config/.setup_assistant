@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: gcr3_description
+    relative_path: urdf/gcr3_description.urdf
+    xacro_args: ""
+  SRDF:
+    relative_path: config/gcr3_description.srdf
+  CONFIG:
+    author_name: WangXF
+    author_email: wangxiaofeng@siasun.com
+    generated_timestamp: 1583118227

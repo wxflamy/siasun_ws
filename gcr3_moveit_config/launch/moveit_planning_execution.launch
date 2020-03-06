@@ -1,0 +1,52 @@
+<launch>
+
+  <arg name="sim" default="false" />
+  <arg name="robot_ip" default="192.168.0.190" unless="$(arg sim)" />
+	<arg name="version0" default="true" />
+
+
+  <rosparam command="load" file="$(find gcr3_moveit_config)/config/joint_names_siasun.yaml"/>
+
+	<!--node pkg="tf" type="static_transform_publisher" name="rgbd_pub" args="0  0  0.298600  0  0  0  1 /rgbd_camera_optical_frame /base_link  1000"/-->
+
+	<node pkg="tf" type="static_transform_publisher" name="rgbdcamera_pub" args="0  0  0.298600  0  0  0  1  /base_link /camera_depth_optical_frame 1000"/>
+
+<!--/camera/depth/points-->
+
+	<group unless="$(arg sim)">
+	<include file="$(find siasun_driver)/launch/robot_interface_streaming.launch">
+		<arg name="robot_ip"   value="$(arg robot_ip)" />
+		<arg name="version0"  value="$(arg version0)" />
+	</include>
+	</group>
+
+  <include file="$(find gcr3_moveit_config)/launch/planning_context.launch" >
+    <arg name="load_robot_description" value="true" />
+  </include>
+
+  <group if="$(arg sim)">
+   <include file="$(find industrial_robot_simulator)/launch/robot_interface_simulator.launch" />
+  </group>
+
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+  <!-- publish the robot state (tf transforms) -->
+  <!--node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" /-->
+  <!--node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher"-->
+    <!--remap from="/joint_states" to="/scr3_description/joint_states" /-->
+  <!--/node-->
+  <!-- Given the published joint states, publish tf for the robot links -->
+  <!--node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="true" output="screen" -->
+    <!--remap from="/joint_states" to="/scr3_description/joint_states" /-->
+  <!--/node-->
+
+
+  <include file="$(find gcr3_moveit_config)/launch/move_group.launch">
+    <arg name="publish_monitored_planning_scene" value="true" />
+  </include>
+
+  <include file="$(find gcr3_moveit_config)/launch/moveit_rviz.launch">
+    <!--arg name="config" value="true"/-->
+  </include>
+
+</launch>
+
